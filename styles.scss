@@ -1,0 +1,131 @@
+:root {
+    --content-width: 750px;
+}
+
+@mixin content {
+    max-width: var(--content-width);
+    margin: auto;
+    padding: 0 2em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #202228;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+h1, h2 {
+    border-bottom: 3px solid white;
+}
+
+a {
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-image: url("./img/20161007_185343.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // todo: dim background image
+    height: 100vh;
+    position: relative;
+
+    nav {
+        @include content;
+        padding-top: 1em;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    #header-text {
+        @include content;
+
+        position: absolute;
+        top: 24vh;
+        left: 0;
+        right: 0;
+
+        text-align: center;
+        font-size: 2.5em;
+        flex-grow: 1;
+
+        h1 {
+            margin: 0;
+        }
+        p {
+            font-size: 0.5em;
+        }
+    }
+
+    #icons {
+        @include content;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        a {
+            margin: 20px;
+        }
+        
+        img {
+            cursor: pointer;
+            width: 50px;
+        }
+    }
+}
+
+#content {
+    @include content;
+
+    section {
+        margin: 1em 0;
+        padding: 10px;
+    }
+
+    .flex-row{
+        display: flex;
+    }
+
+    #about {
+        figure {
+            margin-left: 0;
+            flex: 0 0 30%;
+
+            img {
+                border-radius: 40px;
+            }
+        }
+    }
+
+    #skills {
+        .flex-row > div {
+            flex: 1 0 auto;
+        }
+    }
+
+    #experience {
+        h3 {
+            img {
+                width: 40px;
+                margin-bottom: -10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
