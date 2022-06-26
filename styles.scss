@@ -53,7 +53,7 @@ header {
             text-decoration: none;
 
             .button:hover {
-                transform: scale(1.05);
+                //transform: scale(1.05);
                 color: #FFDAB9;
             }
         }
@@ -62,12 +62,10 @@ header {
 
     #header-text {
         @include content;
-
         position: absolute;
         top: 24vh;
         left: 0;
         right: 0;
-
         text-align: center;
         font-size: 2.5em;
         flex-grow: 1;
@@ -127,6 +125,10 @@ header {
 
     #experience {
         h3 {
+            a {
+                color: #81FFF8;
+                cursor: pointer;
+            }  
             img {
                 width: 40px;
                 margin-bottom: -10px;
@@ -138,6 +140,7 @@ header {
     #education {
         #UCSC {
             display: flex;
+            align-items: center;
             img {
                 margin-left: 50px;
                 width: 175px;
@@ -147,6 +150,7 @@ header {
 
         #Lowell {
             display: flex;
+            align-items: center;
             img {
                 margin-left: 50px;
                 width: 165px;

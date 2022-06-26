@@ -49,7 +49,6 @@ header nav a {
   text-decoration: none;
 }
 header nav a .button:hover {
-  transform: scale(1.05);
   color: #FFDAB9;
 }
 header #header-text {
@@ -109,6 +108,10 @@ header #icons img {
 #content #skills .flex-row > div {
   flex: 1 0 auto;
 }
+#content #experience h3 a {
+  color: #81FFF8;
+  cursor: pointer;
+}
 #content #experience h3 img {
   width: 40px;
   margin-bottom: -10px;
@@ -116,6 +119,7 @@ header #icons img {
 }
 #content #education #UCSC {
   display: flex;
+  align-items: center;
 }
 #content #education #UCSC img {
   margin-left: 50px;
@@ -124,6 +128,7 @@ header #icons img {
 }
 #content #education #Lowell {
   display: flex;
+  align-items: center;
 }
 #content #education #Lowell img {
   margin-left: 50px;
