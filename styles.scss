@@ -51,7 +51,13 @@ header {
 
         a {
             text-decoration: none;
+
+            .button:hover {
+                transform: scale(1.05);
+                color: #FFDAB9;
+            }
         }
+
     }
 
     #header-text {
@@ -125,6 +131,27 @@ header {
                 width: 40px;
                 margin-bottom: -10px;
                 margin-left: 10px;
+            }
+        }
+    }
+
+    #education {
+        #UCSC {
+            display: flex;
+            img {
+                margin-left: 50px;
+                width: 175px;
+                height: 175px;
+            }
+        }
+
+        #Lowell {
+            display: flex;
+            img {
+                margin-left: 50px;
+                width: 165px;
+                height: 165px;
+                border-radius: 90px;
             }
         }
     }

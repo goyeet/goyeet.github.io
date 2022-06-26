@@ -48,6 +48,10 @@ header nav {
 header nav a {
   text-decoration: none;
 }
+header nav a .button:hover {
+  transform: scale(1.05);
+  color: #FFDAB9;
+}
 header #header-text {
   max-width: var(--content-width);
   margin: auto;
@@ -109,4 +113,21 @@ header #icons img {
   width: 40px;
   margin-bottom: -10px;
   margin-left: 10px;
+}
+#content #education #UCSC {
+  display: flex;
+}
+#content #education #UCSC img {
+  margin-left: 50px;
+  width: 175px;
+  height: 175px;
+}
+#content #education #Lowell {
+  display: flex;
+}
+#content #education #Lowell img {
+  margin-left: 50px;
+  width: 165px;
+  height: 165px;
+  border-radius: 90px;
 }/*# sourceMappingURL=styles.css.map */

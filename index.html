@@ -8,23 +8,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles.css">
     </head>
+
     <body>
         <header>
             <nav>
-                <a href="#about">About Me</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
+                <a href="#about"><div class="button">About Me</div></a>
+                <a href="#skills"><div class="button">Skills</div></a>
+                <a href="#experience"><div class="button">Experience</div></a>
+                <a href="#projects"><div class="button">Projects</div></a>
             </nav>
             <div id="header-text">
                 <h1>GORDON YEE</h1>
                 <p>Aspiring Software Engineer/Game Developer</p>
-                <div id="icons">
-                    <a href="https://github.com/goyeet" target="_blank"><img src="img/GitHub.svg" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/gordonnyee/" target="_blank"><img src="img/Linkedin.svg" alt="Linkedin"></a>
+                <div id="icons" class="button">
+                    <a href="https://github.com/goyeet" target="_blank"><div class="button"><img src="img/GitHub.svg" alt="Github"></div></a>
+                    <a href="https://www.linkedin.com/in/gordonnyee/" target="_blank"><div class="button"><img src="img/Linkedin.svg" alt="Linkedin"></div></a>
                 </div>
             </div>
         </header>
+        
         <div id="content">
             <section id="about">
                 <h2>About Me</h2>
@@ -40,6 +42,7 @@
                     </div> 
                 </div>
             </section>
+
             <section id="skills">
                 <h2>Skills</h2>
                 <div class="flex-row">
@@ -67,6 +70,7 @@
                     </div>
                 </div>
             </section>
+
             <section id="experience">
                 <h2>Experience</h2>
                 <h3>Tech4Good @ UCSC<img src="img/T4G Logo.png" alt="Tech4Good Logo"></h3>
@@ -76,25 +80,33 @@
                     Built front-end components of a web application on an Angular framework using HTML, SCSS, and TypeScript.
                 </p>
             </section>
+
             <section id="education">
                 <h2>Education</h2>
-
                 <h3>University of California, Santa Cruz</h3>
-                <p>
-                    Computer Science: Game Design B.S.<br>
-                    Fall 2020 - Present<br>
-                    Expected Graduation Date: June 2024
-                </p>
-                
+                <div id="UCSC">
+                    <p>
+                        Computer Science: Game Design B.S.<br>
+                        Fall 2020 - Present<br>
+                        Expected Graduation Date: June 2024
+                    </p>
+                    <img src="img/UCSC Logo.png" alt="UCSC Logo">
+                </div>
+                <br>
                 <h3>Lowell High School</h3>
-                <p>Fall 2016 - Spring 2020</p>
+                <div id="Lowell">
+                    <p>Fall 2016 - Spring 2020</p>
+                    <img src="img/Lowell HS Logo.jpg" alt="UCSC Logo">
+                </div>
             </section>
+
             <section id="projects">
                 <h2>Projects</h2>
                 <p>Here are some of the things I have worked on.</p>
                 <p>Coming soon...</p>
             </section>
         </div>
+
         <footer>
 
         </footer>
