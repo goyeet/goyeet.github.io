@@ -30,6 +30,7 @@ img {
 
 header {
   background-image: url("./img/20161007_185343.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./img/20161007_185343.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
