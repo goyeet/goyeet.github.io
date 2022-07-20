@@ -195,7 +195,7 @@ header {
                 position: relative;
                 display: inline-block;
                 background-size: contain;
-                margin-bottom: -6px;
+                margin-bottom: -7px;
                 margin-right: 6px;
             }
 
@@ -217,7 +217,6 @@ header {
         }
 
         .tools li {
-            // margin: 2px;
 
             &:before {
                 display: none;
@@ -227,8 +226,20 @@ header {
 
     #experience {
         h3 {
-            a {
+            .external-link {
                 text-decoration: none;
+                &:after {
+                    content: "";
+                    background-repeat: no-repeat;
+                    width: 30px;
+                    height: 30px;
+                    position: relative;
+                    display: inline-block;
+                    background-size: contain;
+                    margin-bottom: -7px;
+                    margin-left: 5px;
+                    background-image: url("../img/external-link.svg");
+                }
             }
             img {
                 width: 40px;
@@ -277,8 +288,20 @@ header {
                 margin-top: 0.3em;
             }
         }
-        a {
+        .external-link {
             text-decoration: none;
+            &:after {
+                content: "";
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                display: inline-block;
+                background-size: contain;
+                margin-bottom: -7px;
+                margin-left: 5px;
+                background-image: url("../img/external-link.svg");
+            }
         }
     }
 }
@@ -290,9 +313,14 @@ footer {
 
     #resume {
         text-decoration: none;
-        background-color: #878da3;
+        background-color: transparent;
+        border: 3px solid white;
         padding: 10px;
         border-radius: 8px;
+        &:hover {
+            color: white;
+            background-color: #3b90aa;
+        }
     }
 
     #icons {

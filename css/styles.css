@@ -175,7 +175,7 @@ header #down-arrow svg {
   position: relative;
   display: inline-block;
   background-size: contain;
-  margin-bottom: -6px;
+  margin-bottom: -7px;
   margin-right: 6px;
 }
 #content #skills li.python:before {
@@ -196,8 +196,20 @@ header #down-arrow svg {
 #content #skills .tools li:before {
   display: none;
 }
-#content #experience h3 a {
+#content #experience h3 .external-link {
   text-decoration: none;
+}
+#content #experience h3 .external-link:after {
+  content: "";
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  background-size: contain;
+  margin-bottom: -7px;
+  margin-left: 5px;
+  background-image: url("../img/external-link.svg");
 }
 #content #experience h3 img {
   width: 40px;
@@ -232,8 +244,20 @@ header #down-arrow svg {
 #content #projects h3 + p {
   margin-top: 0.3em;
 }
-#content #projects a {
+#content #projects .external-link {
   text-decoration: none;
+}
+#content #projects .external-link:after {
+  content: "";
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  background-size: contain;
+  margin-bottom: -7px;
+  margin-left: 5px;
+  background-image: url("../img/external-link.svg");
 }
 
 footer {
@@ -245,9 +269,14 @@ footer {
 }
 footer #resume {
   text-decoration: none;
-  background-color: #878da3;
+  background-color: transparent;
+  border: 3px solid white;
   padding: 10px;
   border-radius: 8px;
+}
+footer #resume:hover {
+  color: white;
+  background-color: #3b90aa;
 }
 footer #icons {
   max-width: var(--content-width);
