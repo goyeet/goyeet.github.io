@@ -5,12 +5,17 @@
 @mixin content {
     max-width: var(--content-width);
     margin: auto;
-    padding: 0 2em;
+    padding: 0 5%;
+
+    @media (max-width: 768px) {
+        //  padding: 0 m;
+    }
 }
 
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #202228;
     /* background: rgb(32,34,40);
@@ -20,6 +25,10 @@ body {
     font-size: 1.3rem;
     line-height: 1.4;
     margin: 0;
+
+    @media (max-width: 768px) {
+        font-size: 1.1rem;
+    }
 }
 
 h1,
@@ -27,8 +36,14 @@ h2 {
     border-bottom: 3px solid white;
 }
 
+
+h1 {
+    font-size: 1.5em;
+    line-height: 1.1;
+    padding-bottom: 0.2em;
+}
 h2 {
-    font-size: 48px;
+    font-size: 2em;
 }
 
 a {
@@ -39,7 +54,7 @@ a {
             fill: #77fff8c9;
         }
         transform: scale(1.10);
-        transition: transform 100ms ease-in-out;
+        transition: transform 200ms ease-in-out;
     }
 }
 
@@ -57,9 +72,19 @@ header {
     height: 100vh;
     position: relative;
 
+    a {
+        &:hover {
+            color: #ffcb94c9;
+            path {
+                fill: #ffcb94c9;
+            }
+        }
+    }
+    
+
     nav {
         @include content;
-        padding-top: 1em;
+        padding-top: 1em !important;
         display: flex;
         justify-content: space-between;
 
@@ -131,8 +156,13 @@ header {
 
     #about {
         #about-content {
-            align-items: center;
+            align-items: flex-start;
+
+            @media (max-width: 500px) {
+                flex-direction: column;
+            }
         }
+
         figure {
             margin-left: 0;
             flex: 0 0 30%;
@@ -144,11 +174,15 @@ header {
 
     #skills {
         .flex-row > div {
-            flex: 1 0 auto;
+            flex: 1 0 50%;
         }
         .language-icon {
             width: 50px;
             height: auto;
+        }
+
+        ul {
+            padding-left: 1em;
         }
 
         li {
@@ -182,8 +216,12 @@ header {
             }
         }
 
-        .tools {
-            margin: 2px;
+        .tools li {
+            // margin: 2px;
+
+            &:before {
+                display: none;
+            }
         }
     }
 
@@ -203,27 +241,42 @@ header {
     #education {
         #UCSC {
             display: flex;
-            align-items: center;
+
+            p {
+                flex-grow: 1;
+            }
             img {
-                margin-left: 60px;
+                margin-left: 50px;
                 width: 175px;
-                height: 175px;
+                
             }
         }
 
         #Lowell {
             display: flex;
-            align-items: center;
+
+            p {
+                flex-grow: 1;
+            }
+
             img {
                 margin-left: 50px;
-                width: 165px;
-                height: 165px;
+                width: 170px;
                 border-radius: 90px;
             }
         }
     }
 
     #projects {
+
+        h3 {
+            margin-top: 1.5em;
+            margin-bottom: 0;
+
+            & + p {
+                margin-top: 0.3em;
+            }
+        }
         a {
             text-decoration: none;
         }
@@ -234,13 +287,17 @@ footer {
     @include content;
     text-align: center;
     margin-bottom: 1em;
-    #cp {
-        align-content: center;
-        font-size: 16px;
+
+    #resume {
+        text-decoration: none;
+        background-color: #878da3;
+        padding: 10px;
+        border-radius: 8px;
     }
 
     #icons {
         @include content;
+        margin: 0.75em;
         position: relative;
         display: flex;
         flex-direction: row;
@@ -253,4 +310,10 @@ footer {
             width: 40px;
         }
     }
+
+    #cp {
+        align-content: center;
+        font-size: 16px;
+    }
+
 }

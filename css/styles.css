@@ -16,14 +16,25 @@ body {
   line-height: 1.4;
   margin: 0;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+}
 
 h1,
 h2 {
   border-bottom: 3px solid white;
 }
 
+h1 {
+  font-size: 1.5em;
+  line-height: 1.1;
+  padding-bottom: 0.2em;
+}
+
 h2 {
-  font-size: 48px;
+  font-size: 2em;
 }
 
 a {
@@ -32,7 +43,7 @@ a {
 a:hover {
   color: rgba(119, 255, 248, 0.7882352941);
   transform: scale(1.1);
-  transition: transform 100ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 a:hover path {
   fill: rgba(119, 255, 248, 0.7882352941);
@@ -52,11 +63,17 @@ header {
   height: 100vh;
   position: relative;
 }
+header a:hover {
+  color: rgba(255, 203, 148, 0.7882352941);
+}
+header a:hover path {
+  fill: rgba(255, 203, 148, 0.7882352941);
+}
 header nav {
   max-width: var(--content-width);
   margin: auto;
-  padding: 0 2em;
-  padding-top: 1em;
+  padding: 0 5%;
+  padding-top: 1em !important;
   display: flex;
   justify-content: space-between;
 }
@@ -66,7 +83,7 @@ header nav a {
 header #header-text {
   max-width: var(--content-width);
   margin: auto;
-  padding: 0 2em;
+  padding: 0 5%;
   position: absolute;
   top: 24vh;
   left: 0;
@@ -84,7 +101,7 @@ header #header-text p {
 header #icons {
   max-width: var(--content-width);
   margin: auto;
-  padding: 0 2em;
+  padding: 0 5%;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -113,7 +130,7 @@ header #down-arrow svg {
 #content {
   max-width: var(--content-width);
   margin: auto;
-  padding: 0 2em;
+  padding: 0 5%;
 }
 #content section {
   margin: 1em 0;
@@ -123,7 +140,12 @@ header #down-arrow svg {
   display: flex;
 }
 #content #about #about-content {
-  align-items: center;
+  align-items: flex-start;
+}
+@media (max-width: 500px) {
+  #content #about #about-content {
+    flex-direction: column;
+  }
 }
 #content #about figure {
   margin-left: 0;
@@ -133,11 +155,14 @@ header #down-arrow svg {
   border-radius: 40px;
 }
 #content #skills .flex-row > div {
-  flex: 1 0 auto;
+  flex: 1 0 50%;
 }
 #content #skills .language-icon {
   width: 50px;
   height: auto;
+}
+#content #skills ul {
+  padding-left: 1em;
 }
 #content #skills li {
   margin: 10px;
@@ -168,8 +193,8 @@ header #down-arrow svg {
 #content #skills li.css:before {
   background-image: url("../img/CSS.svg");
 }
-#content #skills .tools {
-  margin: 2px;
+#content #skills .tools li:before {
+  display: none;
 }
 #content #experience h3 a {
   text-decoration: none;
@@ -181,22 +206,31 @@ header #down-arrow svg {
 }
 #content #education #UCSC {
   display: flex;
-  align-items: center;
+}
+#content #education #UCSC p {
+  flex-grow: 1;
 }
 #content #education #UCSC img {
-  margin-left: 60px;
+  margin-left: 50px;
   width: 175px;
-  height: 175px;
 }
 #content #education #Lowell {
   display: flex;
-  align-items: center;
+}
+#content #education #Lowell p {
+  flex-grow: 1;
 }
 #content #education #Lowell img {
   margin-left: 50px;
-  width: 165px;
-  height: 165px;
+  width: 170px;
   border-radius: 90px;
+}
+#content #projects h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+#content #projects h3 + p {
+  margin-top: 0.3em;
 }
 #content #projects a {
   text-decoration: none;
@@ -205,18 +239,21 @@ header #down-arrow svg {
 footer {
   max-width: var(--content-width);
   margin: auto;
-  padding: 0 2em;
+  padding: 0 5%;
   text-align: center;
   margin-bottom: 1em;
 }
-footer #cp {
-  align-content: center;
-  font-size: 16px;
+footer #resume {
+  text-decoration: none;
+  background-color: #878da3;
+  padding: 10px;
+  border-radius: 8px;
 }
 footer #icons {
   max-width: var(--content-width);
   margin: auto;
-  padding: 0 2em;
+  padding: 0 5%;
+  margin: 0.75em;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -227,4 +264,8 @@ footer #icons a {
 }
 footer #icons svg {
   width: 40px;
+}
+footer #cp {
+  align-content: center;
+  font-size: 16px;
 }/*# sourceMappingURL=styles.css.map */
