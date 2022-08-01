@@ -49,6 +49,17 @@ a:hover path {
   fill: rgba(119, 255, 248, 0.7882352941);
 }
 
+.external-link {
+  text-decoration: none;
+}
+.external-link svg {
+  margin-bottom: 9px;
+}
+.external-link:hover path {
+  stroke: rgba(119, 255, 248, 0.7882352941);
+  fill: none;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -62,12 +73,14 @@ header {
   background-size: cover;
   height: 100vh;
   position: relative;
-}
-header a:hover {
-  color: rgba(255, 203, 148, 0.7882352941);
-}
-header a:hover path {
-  fill: rgba(255, 203, 148, 0.7882352941);
+  /* a {
+      &:hover {
+          color: #ffcb94c9;
+          path {
+              fill: #ffcb94c9;
+          }
+      }
+  } */
 }
 header nav {
   max-width: var(--content-width);
@@ -113,13 +126,21 @@ header #icons a {
 header #icons svg {
   width: 50px;
 }
+header #pic-creds {
+  position: absolute;
+  font-size: 1em;
+  bottom: 150px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 header #down-arrow {
   position: absolute;
   bottom: 80px;
   left: 0;
   right: 0;
   margin: auto;
-  text-align: center;
   width: 40px;
 }
 header #down-arrow svg {
@@ -196,25 +217,11 @@ header #down-arrow svg {
 #content #skills .tools li:before {
   display: none;
 }
-#content #experience h3 .external-link {
-  text-decoration: none;
-}
-#content #experience h3 .external-link:after {
-  content: "";
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  display: inline-block;
-  background-size: contain;
-  margin-bottom: -7px;
-  margin-left: 5px;
-  background-image: url("../img/external-link.svg");
-}
 #content #experience h3 img {
   width: 40px;
   margin-bottom: 10px;
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 #content #education #UCSC {
   display: flex;
@@ -244,21 +251,6 @@ header #down-arrow svg {
 #content #projects h3 + p {
   margin-top: 0.3em;
 }
-#content #projects .external-link {
-  text-decoration: none;
-}
-#content #projects .external-link:after {
-  content: "";
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  display: inline-block;
-  background-size: contain;
-  margin-bottom: -7px;
-  margin-left: 5px;
-  background-image: url("../img/external-link.svg");
-}
 
 footer {
   max-width: var(--content-width);
@@ -276,7 +268,7 @@ footer #resume {
 }
 footer #resume:hover {
   color: white;
-  background-color: #3b90aa;
+  background-color: rgba(67, 201, 194, 0.7882352941);
 }
 footer #icons {
   max-width: var(--content-width);

@@ -58,6 +58,19 @@ a {
     }
 }
 
+.external-link {
+    text-decoration: none;
+    svg {
+        margin-bottom: 9px;
+    }
+    &:hover {
+        path {
+            stroke: #77fff8c9;
+            fill: none;
+        }
+    }
+}
+
 img {
     width: 100%;
     height: auto;
@@ -72,16 +85,15 @@ header {
     height: 100vh;
     position: relative;
 
-    a {
+    /* a {
         &:hover {
             color: #ffcb94c9;
             path {
                 fill: #ffcb94c9;
             }
         }
-    }
+    } */
     
-
     nav {
         @include content;
         padding-top: 1em !important;
@@ -126,13 +138,22 @@ header {
         }
     }
 
+    #pic-creds {
+        position: absolute;
+        font-size: 1em;
+        bottom: 150px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
     #down-arrow {
         position: absolute;
         bottom: 80px;
         left: 0;
         right: 0;
         margin: auto;
-        text-align: center;
         width: 40px;
 
         svg {
@@ -217,7 +238,6 @@ header {
         }
 
         .tools li {
-
             &:before {
                 display: none;
             }
@@ -226,25 +246,11 @@ header {
 
     #experience {
         h3 {
-            .external-link {
-                text-decoration: none;
-                &:after {
-                    content: "";
-                    background-repeat: no-repeat;
-                    width: 30px;
-                    height: 30px;
-                    position: relative;
-                    display: inline-block;
-                    background-size: contain;
-                    margin-bottom: -7px;
-                    margin-left: 5px;
-                    background-image: url("../img/external-link.svg");
-                }
-            }
             img {
                 width: 40px;
                 margin-bottom: 10px;
-                margin-left: 10px;
+                margin-left: 5px;
+                margin-right: 5px;
             }
         }
     }
@@ -252,24 +258,20 @@ header {
     #education {
         #UCSC {
             display: flex;
-
             p {
                 flex-grow: 1;
             }
             img {
                 margin-left: 50px;
                 width: 175px;
-                
             }
         }
 
         #Lowell {
             display: flex;
-
             p {
                 flex-grow: 1;
             }
-
             img {
                 margin-left: 50px;
                 width: 170px;
@@ -288,21 +290,6 @@ header {
                 margin-top: 0.3em;
             }
         }
-        .external-link {
-            text-decoration: none;
-            &:after {
-                content: "";
-                background-repeat: no-repeat;
-                width: 30px;
-                height: 30px;
-                position: relative;
-                display: inline-block;
-                background-size: contain;
-                margin-bottom: -7px;
-                margin-left: 5px;
-                background-image: url("../img/external-link.svg");
-            }
-        }
     }
 }
 
@@ -319,7 +306,7 @@ footer {
         border-radius: 8px;
         &:hover {
             color: white;
-            background-color: #3b90aa;
+            background-color: #43c9c2c9;
         }
     }
 
