@@ -71,6 +71,13 @@ a {
     }
 }
 
+.caption {
+    background-color: #424449;
+    border-radius: 10px;
+    padding: 0.5em 1em 0.5em 1em;
+    text-align: center;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -250,6 +257,7 @@ header {
 
     #experience {
         h3 {
+            font-size: 1.4em;
             img {
                 width: 40px;
                 margin-bottom: 10px;
@@ -285,13 +293,33 @@ header {
     }
 
     #projects {
-
         h3 {
             margin-top: 1.5em;
             margin-bottom: 0;
+            /* background-color: #424449;
+            border-radius: 8px;
+            border-style: solid;
+            border-color: white;
+            padding: 0.5em 1em 0.5em 1em;
+            width: fit-content; */
+            font-size: 1.4em;
 
             & + p {
                 margin-top: 0.3em;
+            }
+        }
+
+        #rsa-cryptosystem {
+            .screenshot {
+                margin-top: 2em;
+                border-radius: 5px;
+            }
+        }
+
+        #overcome {
+            .screenshot {
+                margin-top: 1em;
+                border-radius: 40px;
             }
         }
     }
