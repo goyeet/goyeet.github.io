@@ -59,7 +59,6 @@ a {
 }
 
 .external-link {
-    text-decoration: none;
     svg {
         margin-bottom: 9px;
     }
@@ -71,11 +70,17 @@ a {
     }
 }
 
-.caption {
-    background-color: #424449;
-    border-radius: 10px;
-    padding: 0.5em 1em 0.5em 1em;
-    text-align: center;
+.title-link {
+    text-decoration: none;
+    svg {
+        margin-bottom: 5px;
+    }
+    &:hover {
+        path {
+            stroke: #77fff8c9;
+            fill: none;
+        }
+    }
 }
 
 img {
@@ -190,7 +195,9 @@ header {
                 flex-direction: column;
             }
         }
-
+        p {
+            font-size: 0.9em;
+        }
         figure {
             margin-left: 0;
             flex: 0 0 30%;
@@ -309,9 +316,41 @@ header {
             }
         }
 
+        figure {
+            background-color: #424449;
+            border-radius: 10px;
+            padding: 0.5em 1em 0.5em 1em;
+            margin-left: 0;
+            margin-right: 0;
+            img {
+                margin-top: 1em;
+            }
+            figcaption {
+                background-color: #70737c;
+                border-radius: 10px;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                padding: 1em;
+                text-align: center;
+                font-size: large;
+            }
+        }
+        
+
         #rsa-cryptosystem {
+            p {
+                margin-bottom: 2em;
+            }
             .screenshot {
-                margin-top: 2em;
+                border-radius: 5px;
+            }
+        }
+
+        #data-compressor {
+            p {
+                margin-bottom: 2em;
+            }
+            .screenshot {
                 border-radius: 5px;
             }
         }
@@ -319,7 +358,12 @@ header {
         #overcome {
             .screenshot {
                 margin-top: 1em;
-                border-radius: 40px;
+                border-radius: 30px;
+            }
+            figure {
+                .screenshot {
+                    border-radius: 8px;
+                }
             }
         }
     }

@@ -49,9 +49,6 @@ a:hover path {
   fill: rgba(119, 255, 248, 0.7882352941);
 }
 
-.external-link {
-  text-decoration: none;
-}
 .external-link svg {
   margin-bottom: 9px;
 }
@@ -60,11 +57,15 @@ a:hover path {
   fill: none;
 }
 
-.caption {
-  background-color: #424449;
-  border-radius: 10px;
-  padding: 0.5em 1em 0.5em 1em;
-  text-align: center;
+.title-link {
+  text-decoration: none;
+}
+.title-link svg {
+  margin-bottom: 5px;
+}
+.title-link:hover path {
+  stroke: rgba(119, 255, 248, 0.7882352941);
+  fill: none;
 }
 
 img {
@@ -175,6 +176,9 @@ header #down-arrow svg {
     flex-direction: column;
   }
 }
+#content #about p {
+  font-size: 0.9em;
+}
 #content #about figure {
   margin-left: 0;
   flex: 0 0 30%;
@@ -272,13 +276,43 @@ header #down-arrow svg {
 #content #projects h3 + p {
   margin-top: 0.3em;
 }
+#content #projects figure {
+  background-color: #424449;
+  border-radius: 10px;
+  padding: 0.5em 1em 0.5em 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+#content #projects figure img {
+  margin-top: 1em;
+}
+#content #projects figure figcaption {
+  background-color: #70737c;
+  border-radius: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  text-align: center;
+  font-size: large;
+}
+#content #projects #rsa-cryptosystem p {
+  margin-bottom: 2em;
+}
 #content #projects #rsa-cryptosystem .screenshot {
-  margin-top: 2em;
+  border-radius: 5px;
+}
+#content #projects #data-compressor p {
+  margin-bottom: 2em;
+}
+#content #projects #data-compressor .screenshot {
   border-radius: 5px;
 }
 #content #projects #overcome .screenshot {
   margin-top: 1em;
-  border-radius: 40px;
+  border-radius: 30px;
+}
+#content #projects #overcome figure .screenshot {
+  border-radius: 8px;
 }
 
 footer {
