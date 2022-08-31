@@ -18,8 +18,6 @@ html {
 
 body {
     background-color: #202228;
-    /* background: rgb(32,34,40);
-    background: linear-gradient(90deg, rgba(32,34,40,1) 0%, rgba(91,94,142,1) 50%, rgba(32,34,40,1) 100%); */
     color: white;
     font-family: "Raleway", sans-serif;
     font-size: 1.3rem;
@@ -211,6 +209,7 @@ header {
         .flex-row > div {
             flex: 1 0 50%;
         }
+
         .language-icon {
             width: 50px;
             height: auto;
@@ -236,22 +235,25 @@ header {
             }
 
             &.python:before {
-                background-image: url("../img/Python.svg");
+                background-image: url("../img/python.svg");
             }
             &.c:before {
-                background-image: url("../img/C.svg");
+                background-image: url("../img/c.svg");
             }
             &.cpp:before {
-                background-image: url("../img/C++.svg");
+                background-image: url("../img/cpp.svg");
             }
             &.html:before {
-                background-image: url("../img/HTML.svg");
+                background-image: url("../img/html5.svg");
             }
             &.css:before {
-                background-image: url("../img/CSS.svg");
+                background-image: url("../img/css3.svg");
             }
             &.js:before {
-                background-image: url("../img/JavaScript.svg");
+                background-image: url("../img/javascript.svg");
+            }
+            &.ts:before {
+                background-image: url("../img/typescript.svg");
             }
         }
 

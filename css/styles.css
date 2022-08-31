@@ -8,8 +8,6 @@ html {
 
 body {
   background-color: #202228;
-  /* background: rgb(32,34,40);
-  background: linear-gradient(90deg, rgba(32,34,40,1) 0%, rgba(91,94,142,1) 50%, rgba(32,34,40,1) 100%); */
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
@@ -212,22 +210,25 @@ header #down-arrow svg {
   margin-right: 6px;
 }
 #content #skills li.python:before {
-  background-image: url("../img/Python.svg");
+  background-image: url("../img/python.svg");
 }
 #content #skills li.c:before {
-  background-image: url("../img/C.svg");
+  background-image: url("../img/c.svg");
 }
 #content #skills li.cpp:before {
-  background-image: url("../img/C++.svg");
+  background-image: url("../img/cpp.svg");
 }
 #content #skills li.html:before {
-  background-image: url("../img/HTML.svg");
+  background-image: url("../img/html5.svg");
 }
 #content #skills li.css:before {
-  background-image: url("../img/CSS.svg");
+  background-image: url("../img/css3.svg");
 }
 #content #skills li.js:before {
-  background-image: url("../img/JavaScript.svg");
+  background-image: url("../img/javascript.svg");
+}
+#content #skills li.ts:before {
+  background-image: url("../img/typescript.svg");
 }
 #content #skills .tools li:before {
   display: none;
