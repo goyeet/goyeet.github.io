@@ -40,7 +40,7 @@ a {
 }
 a:hover {
   color: rgba(119, 255, 248, 0.7882352941);
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: transform 200ms ease-in-out;
 }
 a:hover path {
@@ -132,15 +132,6 @@ header #icons a {
 header #icons svg {
   width: 50px;
 }
-header #pic-creds {
-  position: absolute;
-  font-size: 1em;
-  bottom: 150px;
-  text-align: center;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
 header #down-arrow {
   position: absolute;
   bottom: 80px;
@@ -208,6 +199,7 @@ header #down-arrow svg {
   margin-top: 5px;
   margin-bottom: -13px;
   margin-right: 6px;
+  border-radius: 3px;
 }
 #content #skills li.python:before {
   background-image: url("../img/python.svg");
@@ -266,16 +258,32 @@ header #down-arrow svg {
 #content #projects h3 {
   margin-top: 1.5em;
   margin-bottom: 0;
-  /* background-color: #424449;
-  border-radius: 8px;
-  border-style: solid;
-  border-color: white;
-  padding: 0.5em 1em 0.5em 1em;
-  width: fit-content; */
   font-size: 1.4em;
 }
 #content #projects h3 + p {
   margin-top: 0.3em;
+}
+#content #projects .github-button {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  background-color: purple;
+  width: 40px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 8px;
+}
+#content #projects .github-button svg {
+  width: 30px;
+  height: auto;
+}
+#content #projects .github-button:hover {
+  transform: none;
+  background-color: white;
+  transition: 400ms ease-in-out;
+}
+#content #projects .github-button:hover path {
+  fill: purple;
 }
 #content #projects figure {
   background-color: #424449;
@@ -288,13 +296,13 @@ header #down-arrow svg {
   margin-top: 1em;
 }
 #content #projects figure figcaption {
-  background-color: #70737c;
+  background-color: #202228;
   border-radius: 10px;
   margin-top: 1em;
   margin-bottom: 1em;
   padding: 1em;
   text-align: center;
-  font-size: large;
+  font-size: medium;
 }
 #content #projects #rsa-cryptosystem p {
   margin-bottom: 2em;
@@ -323,16 +331,17 @@ footer {
   text-align: center;
   margin-bottom: 1em;
 }
-footer #resume {
+footer .footer-button {
   text-decoration: none;
-  background-color: transparent;
-  border: 3px solid white;
+  background-color: rgba(67, 201, 194, 0.7882352941);
   padding: 10px;
   border-radius: 8px;
+  font-weight: 700;
 }
-footer #resume:hover {
-  color: white;
-  background-color: rgba(67, 201, 194, 0.7882352941);
+footer .footer-button:hover {
+  color: #424449;
+  background-color: white;
+  transition: 400ms ease-in-out;
 }
 footer #icons {
   max-width: var(--content-width);
@@ -352,5 +361,6 @@ footer #icons svg {
 }
 footer #cp {
   align-content: center;
+  margin: 10px;
   font-size: 16px;
 }/*# sourceMappingURL=styles.css.map */

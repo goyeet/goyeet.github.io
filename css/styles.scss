@@ -51,7 +51,7 @@ a {
         path {
             fill: #77fff8c9;
         }
-        transform: scale(1.10);
+        transform: scale(1.05);
         transition: transform 200ms ease-in-out;
     }
 }
@@ -148,16 +148,6 @@ header {
         }
     }
 
-    #pic-creds {
-        position: absolute;
-        font-size: 1em;
-        bottom: 150px;
-        text-align: center;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
     #down-arrow {
         position: absolute;
         bottom: 80px;
@@ -232,6 +222,7 @@ header {
                 margin-top: 5px;
                 margin-bottom: -13px;
                 margin-right: 6px;
+                border-radius: 3px;
             }
 
             &.python:before {
@@ -305,17 +296,37 @@ header {
         h3 {
             margin-top: 1.5em;
             margin-bottom: 0;
-            /* background-color: #424449;
-            border-radius: 8px;
-            border-style: solid;
-            border-color: white;
-            padding: 0.5em 1em 0.5em 1em;
-            width: fit-content; */
             font-size: 1.4em;
 
             & + p {
                 margin-top: 0.3em;
             }
+        }
+
+        .github-button {
+            margin-top: 1em;
+            display: flex;
+            justify-content: center;
+            background-color: purple;
+            width: 40px;
+            height: 35px;
+            border-radius: 5px;
+            padding: 8px;
+
+            svg {
+                width: 30px;
+                height: auto;
+            }
+
+            &:hover {
+                transform: none;
+                background-color: white;
+                transition: 400ms ease-in-out;
+                path {
+                    fill: purple;
+                }
+            }
+
         }
 
         figure {
@@ -328,13 +339,13 @@ header {
                 margin-top: 1em;
             }
             figcaption {
-                background-color: #70737c;
+                background-color: #202228;
                 border-radius: 10px;
                 margin-top: 1em;
                 margin-bottom: 1em;
                 padding: 1em;
                 text-align: center;
-                font-size: large;
+                font-size: medium;
             }
         }
         
@@ -376,15 +387,16 @@ footer {
     text-align: center;
     margin-bottom: 1em;
 
-    #resume {
+    .footer-button {
         text-decoration: none;
-        background-color: transparent;
-        border: 3px solid white;
+        background-color: #43c9c2c9;
         padding: 10px;
         border-radius: 8px;
+        font-weight: 700;
         &:hover {
-            color: white;
-            background-color: #43c9c2c9;
+            color: #424449;
+            background-color: white;
+            transition: 400ms ease-in-out;
         }
     }
 
@@ -406,6 +418,7 @@ footer {
 
     #cp {
         align-content: center;
+        margin: 10px;
         font-size: 16px;
     }
 
