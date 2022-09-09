@@ -79,14 +79,6 @@ header {
   background-size: cover;
   height: 100vh;
   position: relative;
-  /* a {
-      &:hover {
-          color: #ffcb94c9;
-          path {
-              fill: #ffcb94c9;
-          }
-      }
-  } */
 }
 header nav {
   max-width: var(--content-width);
@@ -175,20 +167,10 @@ header #down-arrow svg {
 #content #about figure img {
   border-radius: 40px;
 }
-#content #skills .flex-row > div {
-  flex: 1 0 50%;
-}
-#content #skills .language-icon {
-  width: 50px;
-  height: auto;
-}
-#content #skills ul {
-  padding-left: 1em;
-}
-#content #skills li {
+#content li {
   margin: 10px;
 }
-#content #skills li:before {
+#content li:before {
   content: "";
   background-repeat: no-repeat;
   width: 40px;
@@ -199,31 +181,64 @@ header #down-arrow svg {
   margin-top: 5px;
   margin-bottom: -13px;
   margin-right: 6px;
-  border-radius: 3px;
 }
-#content #skills li.python:before {
+#content li.python:before {
   background-image: url("../img/python.svg");
 }
-#content #skills li.c:before {
+#content li.c:before {
   background-image: url("../img/c.svg");
 }
-#content #skills li.cpp:before {
+#content li.cpp:before {
   background-image: url("../img/cpp.svg");
 }
-#content #skills li.html:before {
+#content li.html:before {
   background-image: url("../img/html5.svg");
 }
-#content #skills li.css:before {
+#content li.css:before {
   background-image: url("../img/css3.svg");
 }
-#content #skills li.js:before {
+#content li.sass:before {
+  background-image: url("../img/sass.svg");
+}
+#content li.js:before {
   background-image: url("../img/javascript.svg");
+  border-radius: 3px;
 }
-#content #skills li.ts:before {
+#content li.ts:before {
   background-image: url("../img/typescript.svg");
+  border-radius: 3px;
 }
-#content #skills .tools li:before {
-  display: none;
+#content li.angular:before {
+  background-image: url("../img/angular.svg");
+  margin-right: 10px;
+}
+#content li.firebase:before {
+  background-image: url("../img/firebase.svg");
+  margin-left: 4px;
+  margin-right: 7px;
+}
+#content li.git:before {
+  background-image: url("../img/git.svg");
+  margin-right: 11px;
+}
+#content li.vscode:before {
+  background-image: url("../img/vscode.svg");
+  margin-right: 12px;
+}
+#content li.figma:before {
+  background-image: url("../img/figma.svg");
+  margin-left: 6px;
+  margin-right: 6px;
+}
+#content #skills .flex-row > div {
+  flex: 1 0 50%;
+}
+#content #skills .language-icon {
+  width: 50px;
+  height: auto;
+}
+#content #skills ul {
+  padding-left: 1em;
 }
 #content #experience h3 {
   font-size: 1.4em;
@@ -233,6 +248,20 @@ header #down-arrow svg {
   margin-bottom: 10px;
   margin-left: 5px;
   margin-right: 5px;
+}
+#content #experience .tools-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#content #experience .tools-list div {
+  background-color: #424449;
+  border-radius: 8px;
+  margin-right: 8px;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
 }
 #content #education #UCSC {
   display: flex;
@@ -255,6 +284,18 @@ header #down-arrow svg {
   width: 170px;
   border-radius: 90px;
 }
+#content #projects .proj-grid {
+  display: grid;
+  grid-template-columns: 50px, 50px;
+  grid-auto-rows: 500px;
+  gap: 2em;
+}
+#content #projects .grid-item {
+  background-color: gray;
+  border-radius: 20px;
+  padding: 2em;
+  font-family: "Roboto Condensed", sans-serif;
+}
 #content #projects h3 {
   margin-top: 1.5em;
   margin-bottom: 0;
@@ -267,23 +308,71 @@ header #down-arrow svg {
   margin-top: 1em;
   display: flex;
   justify-content: center;
-  background-color: purple;
-  width: 40px;
+  text-decoration: none;
+  background-color: white;
+  color: purple;
+  width: 160px;
   height: 35px;
   border-radius: 5px;
   padding: 8px;
+}
+#content #projects .github-button div {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  align-items: center;
 }
 #content #projects .github-button svg {
   width: 30px;
   height: auto;
 }
+#content #projects .github-button path {
+  fill: purple;
+}
 #content #projects .github-button:hover {
   transform: none;
-  background-color: white;
-  transition: 400ms ease-in-out;
+  background-color: purple;
+  transition: 300ms ease-in-out;
+  color: white;
 }
 #content #projects .github-button:hover path {
-  fill: purple;
+  fill: white;
+}
+#content #projects .itch-button {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: white;
+  color: #202228;
+  width: 160px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 8px;
+}
+#content #projects .itch-button div {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  align-items: center;
+}
+#content #projects .itch-button svg {
+  width: 30px;
+  height: auto;
+}
+#content #projects .itch-button path {
+  fill: black;
+}
+#content #projects .itch-button:hover {
+  transform: none;
+  background-color: black;
+  color: white;
+  transition: 300ms ease-in-out;
+}
+#content #projects .itch-button:hover path {
+  fill: white;
 }
 #content #projects figure {
   background-color: #424449;
@@ -319,6 +408,7 @@ header #down-arrow svg {
 #content #projects #overcome .screenshot {
   margin-top: 1em;
   border-radius: 30px;
+  width: 200px;
 }
 #content #projects #overcome figure .screenshot {
   border-radius: 8px;
@@ -333,14 +423,15 @@ footer {
 }
 footer .footer-button {
   text-decoration: none;
-  background-color: rgba(67, 201, 194, 0.7882352941);
+  color: #424449;
+  background-color: white;
   padding: 10px;
   border-radius: 8px;
   font-weight: 700;
 }
 footer .footer-button:hover {
-  color: #424449;
-  background-color: white;
+  color: white;
+  background-color: rgba(67, 201, 194, 0.7882352941);
   transition: 400ms ease-in-out;
 }
 footer #icons {
