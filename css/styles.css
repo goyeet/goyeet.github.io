@@ -284,25 +284,70 @@ header #down-arrow svg {
   width: 170px;
   border-radius: 90px;
 }
-#content #projects .proj-grid {
-  display: grid;
-  grid-template-columns: 50px, 50px;
-  grid-auto-rows: 500px;
+#content #projects .proj-container {
+  display: flex;
+  flex-direction: column;
   gap: 2em;
 }
-#content #projects .grid-item {
-  background-color: gray;
+#content #projects .project-card {
+  font-family: "Roboto Condensed", sans-serif;
   border-radius: 20px;
   padding: 2em;
-  font-family: "Roboto Condensed", sans-serif;
+  border: solid white;
+}
+#content #projects .learn-more {
+  color: white;
+  background-color: #202228;
+  border-color: white;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 700;
+  cursor: pointer;
+}
+#content #projects .learn-more:hover {
+  color: white;
+  background-color: rgba(67, 201, 194, 0.7882352941);
+  transition: 300ms ease-in-out;
+}
+#content #projects .close {
+  border-radius: 100px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-color: #202228;
+  cursor: pointer;
+}
+#content #projects .close div {
+  display: flex;
+}
+#content #projects .close svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: auto;
+}
+#content #projects .project-card.active {
+  background-color: lightgray;
+}
+#content #projects #rsaInfo {
+  display: none;
+}
+#content #projects #huffmanInfo {
+  display: none;
+}
+#content #projects #overcomeInfo {
+  display: none;
 }
 #content #projects h3 {
-  margin-top: 1.5em;
-  margin-bottom: 0;
+  margin: 0;
   font-size: 1.4em;
 }
-#content #projects h3 + p {
-  margin-top: 0.3em;
+#content #projects p {
+  margin-top: 1em;
 }
 #content #projects .github-button {
   margin-top: 1em;
@@ -311,9 +356,9 @@ header #down-arrow svg {
   text-decoration: none;
   background-color: white;
   color: purple;
-  width: 160px;
+  width: 150px;
   height: 35px;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 8px;
 }
 #content #projects .github-button div {
@@ -333,7 +378,7 @@ header #down-arrow svg {
 #content #projects .github-button:hover {
   transform: none;
   background-color: purple;
-  transition: 300ms ease-in-out;
+  transition: 100ms ease-in-out;
   color: white;
 }
 #content #projects .github-button:hover path {
@@ -346,9 +391,9 @@ header #down-arrow svg {
   text-decoration: none;
   background-color: white;
   color: #202228;
-  width: 160px;
+  width: 150px;
   height: 35px;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 8px;
 }
 #content #projects .itch-button div {
@@ -363,13 +408,13 @@ header #down-arrow svg {
   height: auto;
 }
 #content #projects .itch-button path {
-  fill: black;
+  fill: #202228;
 }
 #content #projects .itch-button:hover {
   transform: none;
-  background-color: black;
+  background-color: #202228;
   color: white;
-  transition: 300ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
 #content #projects .itch-button:hover path {
   fill: white;
@@ -393,22 +438,17 @@ header #down-arrow svg {
   text-align: center;
   font-size: medium;
 }
-#content #projects #rsa-cryptosystem p {
-  margin-bottom: 2em;
-}
 #content #projects #rsa-cryptosystem .screenshot {
   border-radius: 5px;
-}
-#content #projects #data-compressor p {
-  margin-bottom: 2em;
 }
 #content #projects #data-compressor .screenshot {
   border-radius: 5px;
 }
-#content #projects #overcome .screenshot {
-  margin-top: 1em;
-  border-radius: 30px;
-  width: 200px;
+#content #projects #overcome {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/OvercomeThumbnail.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #content #projects #overcome figure .screenshot {
   border-radius: 8px;
@@ -432,7 +472,7 @@ footer .footer-button {
 footer .footer-button:hover {
   color: white;
   background-color: rgba(67, 201, 194, 0.7882352941);
-  transition: 400ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 footer #icons {
   max-width: var(--content-width);

@@ -260,7 +260,6 @@ header {
             width: 50px;
             height: auto;
         }
-
         ul {
             padding-left: 1em;
         }
@@ -276,9 +275,7 @@ header {
                 margin-right: 5px;
             }
         }
-
         .tools-list {
-            
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -320,28 +317,77 @@ header {
     }
 
     #projects {
-        .proj-grid {
-            display: grid;
-            grid-template-columns: 50px, 50px;
-            grid-auto-rows: 500px;
+        .proj-container {
+            display: flex;
+            flex-direction: column;
             gap: 2em;
         }
         
-        .grid-item {
-            background-color:gray;
+        .project-card {
+            font-family: 'Roboto Condensed', sans-serif;
             border-radius: 20px;
             padding: 2em;
-            font-family: 'Roboto Condensed', sans-serif;
+            border: solid white;
+        }
+
+        .learn-more {
+            color: white;
+            background-color: #202228;
+            border-color: white;
+            border-style: solid;
+            padding: 10px;
+            border-radius: 8px;
+            width: fit-content;
+            font-weight: 700;
+            cursor: pointer;
+            &:hover {
+                color: white;
+                background-color: #43c9c2c9;
+                transition: 300ms ease-in-out;
+            }        
+        }
+
+        .close {
+            div {
+                display: flex;
+            }
+            border-radius: 100px;
+            border: none;
+            width: 30px;
+            height: 30px;
+            background-color: #202228;
+            svg {
+                width: 20px;
+                height: 20px;
+                display: block;
+                margin: auto;
+            }
+            cursor: pointer;
+        }
+
+        .project-card.active {
+            background-color: lightgray;
+        }
+
+        #rsaInfo {
+            display: none;
+        }
+
+        #huffmanInfo {
+            display: none;
+        }
+
+        #overcomeInfo {
+            display: none;
         }
 
         h3 {
-            margin-top: 1.5em;
-            margin-bottom: 0;
+            margin: 0;
             font-size: 1.4em;
+        }
 
-            & + p {
-                margin-top: 0.3em;
-            }
+        p {
+            margin-top: 1em;
         }
 
         .github-button {
@@ -351,16 +397,15 @@ header {
                 column-gap: 8px;
                 align-items: center;
             }
-            
             margin-top: 1em;
             display: flex;
             justify-content: center;
             text-decoration: none;
             background-color: white;
             color: purple;
-            width: 160px;
+            width: 150px;
             height: 35px;
-            border-radius: 5px;
+            border-radius: 8px;
             padding: 8px;
 
             svg {
@@ -375,7 +420,7 @@ header {
             &:hover {
                 transform: none;
                 background-color: purple;
-                transition: 300ms ease-in-out;
+                transition: 100ms ease-in-out;
                 color: white;
                 path {
                     fill: white;
@@ -397,9 +442,9 @@ header {
             text-decoration: none;
             background-color: white;
             color: #202228;
-            width: 160px;
+            width: 150px;
             height: 35px;
-            border-radius: 5px;
+            border-radius: 8px;
             padding: 8px;
 
             svg {
@@ -408,14 +453,14 @@ header {
             }
 
             path {
-                fill: black;
+                fill: #202228;
             }
 
             &:hover {
                 transform: none;
-                background-color: black;
+                background-color: #202228;
                 color: white;
-                transition: 300ms ease-in-out;
+                transition: 100ms ease-in-out;
                 path {
                     fill: white;
                 }
@@ -444,29 +489,22 @@ header {
         
 
         #rsa-cryptosystem {
-            p {
-                margin-bottom: 2em;
-            }
             .screenshot {
                 border-radius: 5px;
             }
         }
 
         #data-compressor {
-            p {
-                margin-bottom: 2em;
-            }
             .screenshot {
                 border-radius: 5px;
             }
         }
 
         #overcome {
-            .screenshot {
-                margin-top: 1em;
-                border-radius: 30px;
-                width: 200px;
-            }
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/OvercomeThumbnail.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             figure {
                 .screenshot {
                     border-radius: 8px;
@@ -491,7 +529,7 @@ footer {
         &:hover {
             color: white;
             background-color: #43c9c2c9;
-            transition: 400ms ease-in-out;
+            transition: 300ms ease-in-out;
         }
     }
 
