@@ -258,9 +258,11 @@ header #down-arrow svg {
   background-color: #424449;
   border-radius: 8px;
   margin-right: 8px;
+  font-size: 18px;
   width: 180px;
   height: 40px;
   line-height: 40px;
+  padding: 5px;
   text-align: center;
 }
 #content #education #UCSC {
@@ -310,25 +312,23 @@ header #down-arrow svg {
 }
 #content #projects .learn-more:hover {
   color: white;
-  background-color: rgba(67, 201, 194, 0.7882352941);
+  background-color: #424449;
   transition: 300ms ease-in-out;
 }
-#content #projects .close {
+#content #projects .close-container {
+  display: flex;
+  justify-content: center;
+}
+#content #projects .close-container .close {
   border-radius: 100px;
   border: none;
-  width: 30px;
-  height: 30px;
   background-color: #202228;
   cursor: pointer;
 }
-#content #projects .close div {
-  display: flex;
-}
-#content #projects .close svg {
-  width: 20px;
-  height: 20px;
-  display: block;
-  margin: auto;
+#content #projects .close-container .close div svg {
+  width: 40px;
+  height: 40px;
+  fill: white;
 }
 #content #projects .project-card.active {
   background-color: lightgray;
@@ -395,6 +395,7 @@ header #down-arrow svg {
   height: 35px;
   border-radius: 8px;
   padding: 8px;
+  border: solid white;
 }
 #content #projects .itch-button div {
   display: flex;
@@ -441,14 +442,26 @@ header #down-arrow svg {
 #content #projects #rsa-cryptosystem .screenshot {
   border-radius: 5px;
 }
+#content #projects #data-compressor a {
+  text-decoration: none;
+}
 #content #projects #data-compressor .screenshot {
   border-radius: 5px;
 }
 #content #projects #overcome {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/OvercomeThumbnail.jpg");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/OvercomeThumbnail.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  .thumbnail {
+      z-index: -1;
+  } */
+}
+#content #projects #overcome li {
+  margin: 1em;
+}
+#content #projects #overcome li:before {
+  display: none;
 }
 #content #projects #overcome figure .screenshot {
   border-radius: 8px;
@@ -471,7 +484,7 @@ footer .footer-button {
 }
 footer .footer-button:hover {
   color: white;
-  background-color: rgba(67, 201, 194, 0.7882352941);
+  background-color: #424449;
   transition: 300ms ease-in-out;
 }
 footer #icons {

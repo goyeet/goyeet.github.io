@@ -100,7 +100,6 @@ header {
         padding-top: 1em !important;
         display: flex;
         justify-content: space-between;
-
         a {
             text-decoration: none;
         }
@@ -283,9 +282,11 @@ header {
                 background-color: #424449;
                 border-radius: 8px;
                 margin-right: 8px;
+                font-size: 18px;
                 width: 180px;
                 height: 40px;
                 line-height: 40px;
+                padding: 5px;
                 text-align: center;
             }
         }
@@ -342,27 +343,27 @@ header {
             cursor: pointer;
             &:hover {
                 color: white;
-                background-color: #43c9c2c9;
+                background-color: #424449;
                 transition: 300ms ease-in-out;
             }        
         }
 
-        .close {
-            div {
-                display: flex;
+        .close-container {
+            display: flex;
+            justify-content: center;
+            .close {
+                border-radius: 100px;
+                border: none;
+                background-color: #202228;
+                cursor: pointer;
+                div {
+                    svg {
+                        width: 40px;
+                        height: 40px;
+                        fill: white;
+                    }
+                }
             }
-            border-radius: 100px;
-            border: none;
-            width: 30px;
-            height: 30px;
-            background-color: #202228;
-            svg {
-                width: 20px;
-                height: 20px;
-                display: block;
-                margin: auto;
-            }
-            cursor: pointer;
         }
 
         .project-card.active {
@@ -446,6 +447,7 @@ header {
             height: 35px;
             border-radius: 8px;
             padding: 8px;
+            border: solid white;
 
             svg {
                 width: 30px;
@@ -486,7 +488,6 @@ header {
                 font-size: medium;
             }
         }
-        
 
         #rsa-cryptosystem {
             .screenshot {
@@ -495,16 +496,28 @@ header {
         }
 
         #data-compressor {
+            a {
+                text-decoration: none;
+            }
             .screenshot {
                 border-radius: 5px;
             }
         }
 
         #overcome {
-            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/OvercomeThumbnail.jpg");
+            /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/OvercomeThumbnail.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            .thumbnail {
+                z-index: -1;
+            } */
+            li {
+                margin: 1em;
+                &:before {
+                    display: none;
+                }
+            }
             figure {
                 .screenshot {
                     border-radius: 8px;
@@ -528,7 +541,7 @@ footer {
         font-weight: 700;
         &:hover {
             color: white;
-            background-color: #43c9c2c9;
+            background-color: #424449;
             transition: 300ms ease-in-out;
         }
     }
@@ -546,7 +559,7 @@ footer {
 
         svg {
             width: 40px;
-        }
+        }     
     }
 
     #cp {
