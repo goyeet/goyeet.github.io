@@ -95,15 +95,35 @@ header {
     height: 100vh;
     position: relative;
 
-    nav {
-        @include content;
-        padding-top: 1em !important;
+    #navbar-container {
         display: flex;
-        justify-content: space-between;
-        a {
-            text-decoration: none;
+        justify-content: center;
+        
+        #navbar {
+            @include content;
+            font-family: 'Roboto Condensed', sans-serif;
+            z-index: 1;
+            padding: 10px !important;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            background-color: rgba(20, 22, 28, 0);
+            
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+
+            a {
+                text-decoration: none;
+            }
+            a.active {
+                text-decoration: underline;
+            }
         }
     }
+    
 
     #header-text {
         @include content;
@@ -329,6 +349,9 @@ header {
             border-radius: 20px;
             padding: 2em;
             border: solid white;
+            a {
+                text-decoration: none;
+            }
         }
 
         .learn-more {
@@ -378,7 +401,15 @@ header {
             display: none;
         }
 
+        #mazeInfo {
+            display: none;
+        }
+
         #overcomeInfo {
+            display: none;
+        }
+
+        #redCliffsInfo {
             display: none;
         }
 
@@ -505,13 +536,20 @@ header {
         }
 
         #overcome {
-            /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/OvercomeThumbnail.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            .thumbnail {
-                z-index: -1;
-            } */
+            li {
+                margin: 1em;
+                &:before {
+                    display: none;
+                }
+            }
+            figure {
+                .screenshot {
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        #redCliffs {
             li {
                 margin: 1em;
                 &:before {

@@ -149,8 +149,8 @@
         </h3>
         <p>
             Undergraduate Research Assistant: Web Developer<br>
-            March 2022 - Present<br><br>
-            Built front-end components of web applications on an Angular framework.
+            March 2022 - December 2022<br><br>
+            Built and completed front-end components of the lab's web applications on an Angular-Firebase framework.
             <br><br>
             Languages/Tools used:
             <div class="tools-list">
@@ -252,7 +252,6 @@
                 </h3>
                 <p>
                     A lossless data compressor and decompressor using <b><a class="external-link" href="https://en.wikipedia.org/wiki/Huffman_coding" target="_blank">Huffman coding</a></b>.
-                    <!-- <br><br>Both the encoder and decoder have the ability to read from/write to stdin and stdout but can also use files specified by command-line arguments when running the program. -->
                 </p>
                 <button onclick="showMoreInfo('huffmanInfo')" class="learn-more">Learn More</button>
                 <div id="huffmanInfo">
@@ -277,6 +276,48 @@
                     </figure>
                     <div class="close-container">
                         <button onclick="closeInfo('huffmanInfo')" class="close">
+                            <div>
+                                <?xml version="1.0" encoding="iso-8859-1"?>
+                                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+                                <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+                                    l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+                                    C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+                                </svg>  
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" id="maze">
+                <h3>
+                    Maze Generator and Solver
+                </h3>
+                <p>
+                    A program that randomly generates complex mazes and solves them using a depth first search algorithm.<br><br>(Source code private for academic integrity.)
+                </p>
+                <button onclick="showMoreInfo('mazeInfo')" class="learn-more">Learn More</button>
+                <div id="mazeInfo">
+                    <figure>
+                        <img class="screenshot" src="img/gridGenerated.jpg">
+                        <figcaption class="caption">First, a grid is created which contains nodes with unique randomized edgeweights.</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="screenshot" src="img/mazeGenerated.jpg">
+                        <figcaption class="caption">These nodes are then "connected" by generating a minimal spanning tree (MST) using Prim's algorithm.</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="screenshot" src="img/mazeSolved.jpg">
+                        <figcaption class="caption">The maze is then solved simply by using a depth first search (DFS).</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="screenshot" src="img/100x200Solved.jpg">
+                        <figcaption class="caption">Mazes even as large as this (100x200) can be solved in mere seconds!</figcaption>
+                    </figure>
+                    <div class="close-container">
+                        <button onclick="closeInfo('mazeInfo')" class="close">
                             <div>
                                 <?xml version="1.0" encoding="iso-8859-1"?>
                                 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -346,6 +387,61 @@
                     </div>
                 </div>
             </div>
+
+            <div class="project-card" id="redCliffs">
+                <h3>
+                    Battle of Red Cliffs
+                </h3>
+                <p>
+                    A modification of the game <b><a class="external-link" href="https://hollandspiele.com/products/table-battles?variant=858465894424" target="_blank">Table Battles</a></b> 
+                    based on the historical <b><a class="external-link" href="https://en.wikipedia.org/wiki/Battle_of_Red_Cliffs" target="_blank">Battle of Red Cliffs</a></b>.
+                </p>
+                <button onclick="showMoreInfo('redCliffsInfo')" class="learn-more">Learn More</button>
+                <div id="redCliffsInfo">
+                    <ul>
+                        <li>
+                            Implemented in <b><a href="https://vassalengine.org/" target="_blank">Vassal</a></b>, a boardgame simulator.</li>
+                        <li>
+                            Designed and implemented over the span of 2 weeks with a group of 3 other classmates.
+                        </li>
+                        <li>
+                            Facilitated and documented multiple playtests to balance game values like health points, damage values, action requirements, and more.
+                        </li>
+                        <li>
+                            Collaborated with teammates on card design, card balancing, and adding/modifying existing rules and mechanics.
+                        </li>
+                        <li>
+                            Created assets in <b><a href="https://www.gimp.org/" target="_blank">GIMP</a></b>.
+                        </li>
+                    </ul>
+
+                    <figure>
+                        <img class="screenshot" src="img/redCliffsBoard.jpg" alt="redCliffsBoard">
+                        <figcaption class="caption">A game in progress being played.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img class="screenshot" src="img/redCliffsDiagram.jpg" alt="redCliffsDiagram">
+                        <figcaption class="caption">A diagram identifying parts, state attributes, boundaries, and behaviors. (Credit: Dylan Higashionna)</figcaption>
+                    </figure>
+
+                    <div class="close-container">
+                        <button onclick="closeInfo('redCliffsInfo')" class="close">
+                            <div>
+                                <?xml version="1.0" encoding="iso-8859-1"?>
+                                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+                                <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+                                    l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+                                    C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+                                </svg>  
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 </div>
@@ -380,7 +476,7 @@
             </svg>
         </a>
     </div>
-    <span id="cp">Copyright © 2022 - Gordon Yee</span>
+    <span id="cp">Copyright © 2023 - Gordon Yee</span>
 </footer>
 
 

@@ -80,16 +80,32 @@ header {
   height: 100vh;
   position: relative;
 }
-header nav {
+header #navbar-container {
+  display: flex;
+  justify-content: center;
+}
+header #navbar-container #navbar {
   max-width: var(--content-width);
   margin: auto;
   padding: 0 5%;
-  padding-top: 1em !important;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 1;
+  padding: 10px !important;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  background-color: rgba(20, 22, 28, 0);
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
-header nav a {
+header #navbar-container #navbar a {
   text-decoration: none;
+}
+header #navbar-container #navbar a.active {
+  text-decoration: underline;
 }
 header #header-text {
   max-width: var(--content-width);
@@ -297,6 +313,9 @@ header #down-arrow svg {
   padding: 2em;
   border: solid white;
 }
+#content #projects .project-card a {
+  text-decoration: none;
+}
 #content #projects .learn-more {
   color: white;
   background-color: #202228;
@@ -339,7 +358,13 @@ header #down-arrow svg {
 #content #projects #huffmanInfo {
   display: none;
 }
+#content #projects #mazeInfo {
+  display: none;
+}
 #content #projects #overcomeInfo {
+  display: none;
+}
+#content #projects #redCliffsInfo {
   display: none;
 }
 #content #projects h3 {
@@ -448,15 +473,6 @@ header #down-arrow svg {
 #content #projects #data-compressor .screenshot {
   border-radius: 5px;
 }
-#content #projects #overcome {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/OvercomeThumbnail.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  .thumbnail {
-      z-index: -1;
-  } */
-}
 #content #projects #overcome li {
   margin: 1em;
 }
@@ -464,6 +480,15 @@ header #down-arrow svg {
   display: none;
 }
 #content #projects #overcome figure .screenshot {
+  border-radius: 8px;
+}
+#content #projects #redCliffs li {
+  margin: 1em;
+}
+#content #projects #redCliffs li:before {
+  display: none;
+}
+#content #projects #redCliffs figure .screenshot {
   border-radius: 8px;
 }
 
