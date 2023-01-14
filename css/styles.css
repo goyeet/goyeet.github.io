@@ -88,7 +88,7 @@ header #navbar-container #navbar {
   max-width: var(--content-width);
   margin: auto;
   padding: 0 5%;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Raleway", sans-serif;
   z-index: 1;
   padding: 10px !important;
   display: flex;
