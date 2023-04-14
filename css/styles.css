@@ -323,7 +323,6 @@ header #down-arrow svg {
   border-style: solid;
   padding: 10px;
   border-radius: 8px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 700;
@@ -356,6 +355,9 @@ header #down-arrow svg {
   display: none;
 }
 #content #projects #huffmanInfo {
+  display: none;
+}
+#content #projects #httpServerInfo {
   display: none;
 }
 #content #projects #mazeInfo {
