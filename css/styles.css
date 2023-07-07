@@ -183,10 +183,13 @@ header #down-arrow svg {
 #content #about figure img {
   border-radius: 40px;
 }
-#content li {
+#content #skills .flex-row > div {
+  flex: 1 0 50%;
+}
+#content #skills li {
   margin: 10px;
 }
-#content li:before {
+#content #skills li:before {
   content: "";
   background-repeat: no-repeat;
   width: 40px;
@@ -198,56 +201,53 @@ header #down-arrow svg {
   margin-bottom: -13px;
   margin-right: 6px;
 }
-#content li.python:before {
+#content #skills li.python:before {
   background-image: url("../img/python.svg");
 }
-#content li.c:before {
+#content #skills li.c:before {
   background-image: url("../img/c.svg");
 }
-#content li.cpp:before {
+#content #skills li.cpp:before {
   background-image: url("../img/cpp.svg");
 }
-#content li.html:before {
+#content #skills li.html:before {
   background-image: url("../img/html5.svg");
 }
-#content li.css:before {
+#content #skills li.css:before {
   background-image: url("../img/css3.svg");
 }
-#content li.sass:before {
+#content #skills li.sass:before {
   background-image: url("../img/sass.svg");
 }
-#content li.js:before {
+#content #skills li.js:before {
   background-image: url("../img/javascript.svg");
   border-radius: 3px;
 }
-#content li.ts:before {
+#content #skills li.ts:before {
   background-image: url("../img/typescript.svg");
   border-radius: 3px;
 }
-#content li.angular:before {
+#content #skills li.angular:before {
   background-image: url("../img/angular.svg");
   margin-right: 10px;
 }
-#content li.firebase:before {
+#content #skills li.firebase:before {
   background-image: url("../img/firebase.svg");
   margin-left: 4px;
   margin-right: 7px;
 }
-#content li.git:before {
+#content #skills li.git:before {
   background-image: url("../img/git.svg");
   margin-right: 11px;
 }
-#content li.vscode:before {
+#content #skills li.vscode:before {
   background-image: url("../img/vscode.svg");
   margin-right: 12px;
 }
-#content li.figma:before {
+#content #skills li.figma:before {
   background-image: url("../img/figma.svg");
   margin-left: 6px;
   margin-right: 6px;
-}
-#content #skills .flex-row > div {
-  flex: 1 0 50%;
 }
 #content #skills .language-icon {
   width: 50px;
@@ -363,6 +363,9 @@ header #down-arrow svg {
 #content #projects #mazeInfo {
   display: none;
 }
+#content #projects #amusiaInfo {
+  display: none;
+}
 #content #projects #overcomeInfo {
   display: none;
 }
@@ -474,6 +477,15 @@ header #down-arrow svg {
 }
 #content #projects #data-compressor .screenshot {
   border-radius: 5px;
+}
+#content #projects #amusia li {
+  margin: 1em;
+}
+#content #projects #amusia li:before {
+  display: none;
+}
+#content #projects #amusia figure .screenshot {
+  border-radius: 8px;
 }
 #content #projects #overcome li {
   margin: 1em;

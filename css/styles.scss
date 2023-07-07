@@ -203,76 +203,76 @@ header {
                 border-radius: 40px;
             }
         }
-    }
-
-    li {
-        margin: 10px;
-        &:before {
-            content: "";
-            background-repeat: no-repeat;
-            width: 40px;
-            height: 40px;
-            position: relative;
-            display: inline-block;
-            background-size: contain;
-            margin-top: 5px;
-            margin-bottom: -13px;
-            margin-right: 6px;
-        }
-
-        &.python:before {
-            background-image: url("../img/python.svg");
-        }
-        &.c:before {
-            background-image: url("../img/c.svg");
-        }
-        &.cpp:before {
-            background-image: url("../img/cpp.svg");
-        }
-        &.html:before {
-            background-image: url("../img/html5.svg");
-        }
-        &.css:before {
-            background-image: url("../img/css3.svg");
-        }
-        &.sass:before {
-            background-image: url("../img/sass.svg");
-        }
-        &.js:before {
-            background-image: url("../img/javascript.svg");
-            border-radius: 3px;
-        }
-        &.ts:before {
-            background-image: url("../img/typescript.svg");
-            border-radius: 3px;
-        }
-        &.angular:before {
-            background-image: url("../img/angular.svg");
-            margin-right: 10px;
-        }
-        &.firebase:before {
-            background-image: url("../img/firebase.svg");
-            margin-left: 4px;
-            margin-right: 7px;
-        }
-        &.git:before {
-            background-image: url("../img/git.svg");
-            margin-right: 11px;
-        }
-        &.vscode:before {
-            background-image: url("../img/vscode.svg");
-            margin-right: 12px;
-        }
-        &.figma:before {
-            background-image: url("../img/figma.svg");
-            margin-left: 6px;
-            margin-right: 6px;
-        }
-    }
+    }  
 
     #skills {
         .flex-row > div {
             flex: 1 0 50%;
+        }
+
+        li {
+            margin: 10px;
+            &:before {
+                content: "";
+                background-repeat: no-repeat;
+                width: 40px;
+                height: 40px;
+                position: relative;
+                display: inline-block;
+                background-size: contain;
+                margin-top: 5px;
+                margin-bottom: -13px;
+                margin-right: 6px;
+            }
+    
+            &.python:before {
+                background-image: url("../img/python.svg");
+            }
+            &.c:before {
+                background-image: url("../img/c.svg");
+            }
+            &.cpp:before {
+                background-image: url("../img/cpp.svg");
+            }
+            &.html:before {
+                background-image: url("../img/html5.svg");
+            }
+            &.css:before {
+                background-image: url("../img/css3.svg");
+            }
+            &.sass:before {
+                background-image: url("../img/sass.svg");
+            }
+            &.js:before {
+                background-image: url("../img/javascript.svg");
+                border-radius: 3px;
+            }
+            &.ts:before {
+                background-image: url("../img/typescript.svg");
+                border-radius: 3px;
+            }
+            &.angular:before {
+                background-image: url("../img/angular.svg");
+                margin-right: 10px;
+            }
+            &.firebase:before {
+                background-image: url("../img/firebase.svg");
+                margin-left: 4px;
+                margin-right: 7px;
+            }
+            &.git:before {
+                background-image: url("../img/git.svg");
+                margin-right: 11px;
+            }
+            &.vscode:before {
+                background-image: url("../img/vscode.svg");
+                margin-right: 12px;
+            }
+            &.figma:before {
+                background-image: url("../img/figma.svg");
+                margin-left: 6px;
+                margin-right: 6px;
+            }
         }
 
         .language-icon {
@@ -409,6 +409,10 @@ header {
             display: none;
         }
 
+        #amusiaInfo {
+            display: none;
+        }
+
         #overcomeInfo {
             display: none;
         }
@@ -536,6 +540,20 @@ header {
             }
             .screenshot {
                 border-radius: 5px;
+            }
+        }
+
+        #amusia {
+            li {
+                margin: 1em;
+                &:before {
+                    display: none;
+                }
+            }
+            figure {
+                .screenshot {
+                    border-radius: 8px;
+                }
             }
         }
 
