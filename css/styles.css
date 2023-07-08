@@ -1,5 +1,6 @@
 :root {
   --content-width: 750px;
+  --highlight-color: #61e488;
 }
 
 html {
@@ -7,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #202228;
+  background-color: #131d15;
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
@@ -39,19 +40,21 @@ a {
   color: white;
 }
 a:hover {
-  color: rgba(119, 255, 248, 0.7882352941);
-  transform: scale(1.05);
-  transition: transform 200ms ease-in-out;
+  color: var(--highlight-color);
+  transition: 300ms ease-in-out;
 }
 a:hover path {
-  fill: rgba(119, 255, 248, 0.7882352941);
+  fill: var(--highlight-color);
 }
 
 .external-link svg {
   margin-bottom: 9px;
 }
+.external-link:hover {
+  transition: 300ms ease-in-out;
+}
 .external-link:hover path {
-  stroke: rgba(119, 255, 248, 0.7882352941);
+  stroke: var(--highlight-color);
   fill: none;
 }
 
@@ -62,7 +65,7 @@ a:hover path {
   margin-bottom: 5px;
 }
 .title-link:hover path {
-  stroke: rgba(119, 255, 248, 0.7882352941);
+  stroke: var(--highlight-color);
   fill: none;
 }
 
@@ -72,8 +75,8 @@ img {
 }
 
 header {
-  background-image: url("../img/Sunset.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Sunset.jpg");
+  background-image: url("../img/MinimalistDesk.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/MinimalistDesk.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -90,12 +93,12 @@ header #navbar-container #navbar {
   padding: 0 5%;
   font-family: "Raleway", sans-serif;
   z-index: 1;
-  padding: 10px !important;
+  padding: 15px !important;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  background-color: rgba(20, 22, 28, 0);
-  padding: 10px;
+  background-color: #223325;
+  border-radius: 0px 0px 16px 16px;
   text-align: center;
   width: 100%;
   position: fixed;
@@ -112,10 +115,10 @@ header #header-text {
   margin: auto;
   padding: 0 5%;
   position: absolute;
-  top: 24vh;
+  top: 32vh;
   left: 0;
   right: 0;
-  text-align: center;
+  text-align: left;
   font-size: 2.5em;
   flex-grow: 1;
 }
@@ -202,50 +205,50 @@ header #down-arrow svg {
   margin-right: 6px;
 }
 #content #skills li.python:before {
-  background-image: url("../img/python.svg");
+  background-image: url("../img/skillsIcons/python.svg");
 }
 #content #skills li.c:before {
-  background-image: url("../img/c.svg");
+  background-image: url("../img/skillsIcons/c.svg");
 }
 #content #skills li.cpp:before {
-  background-image: url("../img/cpp.svg");
+  background-image: url("../img/skillsIcons/cpp.svg");
 }
 #content #skills li.html:before {
-  background-image: url("../img/html5.svg");
+  background-image: url("../img/skillsIcons/html5.svg");
 }
 #content #skills li.css:before {
-  background-image: url("../img/css3.svg");
+  background-image: url("../img/skillsIcons/css3.svg");
 }
 #content #skills li.sass:before {
-  background-image: url("../img/sass.svg");
+  background-image: url("../img/skillsIcons/sass.svg");
 }
 #content #skills li.js:before {
-  background-image: url("../img/javascript.svg");
+  background-image: url("../img/skillsIcons/javascript.svg");
   border-radius: 3px;
 }
 #content #skills li.ts:before {
-  background-image: url("../img/typescript.svg");
+  background-image: url("../img/skillsIcons/typescript.svg");
   border-radius: 3px;
 }
 #content #skills li.angular:before {
-  background-image: url("../img/angular.svg");
+  background-image: url("../img/skillsIcons/angular.svg");
   margin-right: 10px;
 }
 #content #skills li.firebase:before {
-  background-image: url("../img/firebase.svg");
+  background-image: url("../img/skillsIcons/firebase.svg");
   margin-left: 4px;
   margin-right: 7px;
 }
 #content #skills li.git:before {
-  background-image: url("../img/git.svg");
+  background-image: url("../img/skillsIcons/git.svg");
   margin-right: 11px;
 }
 #content #skills li.vscode:before {
-  background-image: url("../img/vscode.svg");
+  background-image: url("../img/skillsIcons/vscode.svg");
   margin-right: 12px;
 }
 #content #skills li.figma:before {
-  background-image: url("../img/figma.svg");
+  background-image: url("../img/skillsIcons/figma.svg");
   margin-left: 6px;
   margin-right: 6px;
 }
@@ -317,9 +320,9 @@ header #down-arrow svg {
   text-decoration: none;
 }
 #content #projects .learn-more {
-  color: white;
-  background-color: #202228;
   border-color: white;
+  background-color: #131d15;
+  color: white;
   border-style: solid;
   padding: 10px;
   border-radius: 8px;
@@ -329,8 +332,8 @@ header #down-arrow svg {
   cursor: pointer;
 }
 #content #projects .learn-more:hover {
-  color: white;
-  background-color: #424449;
+  color: var(--highlight-color);
+  border-color: var(--highlight-color);
   transition: 300ms ease-in-out;
 }
 #content #projects .close-container {
@@ -340,7 +343,7 @@ header #down-arrow svg {
 #content #projects .close-container .close {
   border-radius: 100px;
   border: none;
-  background-color: #202228;
+  background-color: #131d15;
   cursor: pointer;
 }
 #content #projects .close-container .close div svg {
@@ -515,7 +518,7 @@ footer {
 }
 footer .footer-button {
   text-decoration: none;
-  color: #424449;
+  color: #131d15;
   background-color: white;
   padding: 10px;
   border-radius: 8px;
@@ -523,7 +526,7 @@ footer .footer-button {
 }
 footer .footer-button:hover {
   color: white;
-  background-color: #424449;
+  background-color: var(--highlight-color);
   transition: 300ms ease-in-out;
 }
 footer #icons {

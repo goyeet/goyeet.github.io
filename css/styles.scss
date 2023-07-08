@@ -1,5 +1,6 @@
 :root {
     --content-width: 750px;
+    --highlight-color: #61e488;
 }
 
 @mixin content {
@@ -17,7 +18,8 @@ html {
 }
 
 body {
-    background-color: #202228;
+    // background: linear-gradient(180deg, #000000 30%, #4F884A);
+    background-color: #131d15;
     color: white;
     font-family: "Raleway", sans-serif;
     font-size: 1.3rem;
@@ -40,6 +42,7 @@ h1 {
     line-height: 1.1;
     padding-bottom: 0.2em;
 }
+
 h2 {
     font-size: 2em;
 }
@@ -47,12 +50,11 @@ h2 {
 a {
     color: white;
     &:hover {
-        color: #77fff8c9;
+        color: var(--highlight-color);
         path {
-            fill: #77fff8c9;
+            fill: var(--highlight-color);
         }
-        transform: scale(1.05);
-        transition: transform 200ms ease-in-out;
+        transition: 300ms ease-in-out;
     }
 }
 
@@ -62,9 +64,10 @@ a {
     }
     &:hover {
         path {
-            stroke: #77fff8c9;
+            stroke: var(--highlight-color);
             fill: none;
         }
+        transition: 300ms ease-in-out;
     }
 }
 
@@ -75,7 +78,7 @@ a {
     }
     &:hover {
         path {
-            stroke: #77fff8c9;
+            stroke: var(--highlight-color);
             fill: none;
         }
     }
@@ -86,9 +89,10 @@ img {
     height: auto;
 }
 
+// Hero
 header {
-    background-image: url("../img/Sunset.jpg");
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Sunset.jpg");
+    background-image: url("../img/MinimalistDesk.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/MinimalistDesk.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -103,13 +107,12 @@ header {
             @include content;
             font-family: 'Raleway', sans-serif;
             z-index: 1;
-            padding: 10px !important;
+            padding: 15px !important;
             display: flex;
             justify-content: space-between;
             overflow: hidden;
-            background-color: rgba(20, 22, 28, 0);
-            
-            padding: 10px;
+            background-color: #223325;
+            border-radius: 0px 0px 16px 16px;
             text-align: center;
             width: 100%;
             position: fixed;
@@ -124,14 +127,13 @@ header {
         }
     }
     
-
     #header-text {
         @include content;
         position: absolute;
-        top: 24vh;
+        top: 32vh;
         left: 0;
         right: 0;
-        text-align: center;
+        text-align: left;
         font-size: 2.5em;
         flex-grow: 1;
 
@@ -226,50 +228,50 @@ header {
             }
     
             &.python:before {
-                background-image: url("../img/python.svg");
+                background-image: url("../img/skillsIcons/python.svg");
             }
             &.c:before {
-                background-image: url("../img/c.svg");
+                background-image: url("../img/skillsIcons/c.svg");
             }
             &.cpp:before {
-                background-image: url("../img/cpp.svg");
+                background-image: url("../img/skillsIcons/cpp.svg");
             }
             &.html:before {
-                background-image: url("../img/html5.svg");
+                background-image: url("../img/skillsIcons/html5.svg");
             }
             &.css:before {
-                background-image: url("../img/css3.svg");
+                background-image: url("../img/skillsIcons/css3.svg");
             }
             &.sass:before {
-                background-image: url("../img/sass.svg");
+                background-image: url("../img/skillsIcons/sass.svg");
             }
             &.js:before {
-                background-image: url("../img/javascript.svg");
+                background-image: url("../img/skillsIcons/javascript.svg");
                 border-radius: 3px;
             }
             &.ts:before {
-                background-image: url("../img/typescript.svg");
+                background-image: url("../img/skillsIcons/typescript.svg");
                 border-radius: 3px;
             }
             &.angular:before {
-                background-image: url("../img/angular.svg");
+                background-image: url("../img/skillsIcons/angular.svg");
                 margin-right: 10px;
             }
             &.firebase:before {
-                background-image: url("../img/firebase.svg");
+                background-image: url("../img/skillsIcons/firebase.svg");
                 margin-left: 4px;
                 margin-right: 7px;
             }
             &.git:before {
-                background-image: url("../img/git.svg");
+                background-image: url("../img/skillsIcons/git.svg");
                 margin-right: 11px;
             }
             &.vscode:before {
-                background-image: url("../img/vscode.svg");
+                background-image: url("../img/skillsIcons/vscode.svg");
                 margin-right: 12px;
             }
             &.figma:before {
-                background-image: url("../img/figma.svg");
+                background-image: url("../img/skillsIcons/figma.svg");
                 margin-left: 6px;
                 margin-right: 6px;
             }
@@ -355,9 +357,9 @@ header {
         }
 
         .learn-more {
-            color: white;
-            background-color: #202228;
             border-color: white;
+            background-color: #131d15;
+            color: white;
             border-style: solid;
             padding: 10px;
             border-radius: 8px;
@@ -365,8 +367,8 @@ header {
             font-weight: 700;
             cursor: pointer;
             &:hover {
-                color: white;
-                background-color: #424449;
+                color: var(--highlight-color);
+                border-color: var(--highlight-color);
                 transition: 300ms ease-in-out;
             }        
         }
@@ -377,7 +379,7 @@ header {
             .close {
                 border-radius: 100px;
                 border: none;
-                background-color: #202228;
+                background-color: #131d15;
                 cursor: pointer;
                 div {
                     svg {
@@ -594,14 +596,14 @@ footer {
 
     .footer-button {
         text-decoration: none;
-        color: #424449;
+        color: #131d15;
         background-color: white;
         padding: 10px;
         border-radius: 8px;
         font-weight: 700;
         &:hover {
             color: white;
-            background-color: #424449;
+            background-color: var(--highlight-color);
             transition: 300ms ease-in-out;
         }
     }

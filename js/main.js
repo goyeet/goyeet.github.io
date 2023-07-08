@@ -5,7 +5,7 @@ let headerPos = headerText.getBoundingClientRect().top;
 console.log(headerPos);
 let opac = 0;
 
-window.onscroll = function(e) {
+/* window.onscroll = function(e) {
     let scrollDirection;
     (this.oldScroll > this.scrollY) ? scrollDirection = 'up' : scrollDirection = 'down';
     this.oldScroll = this.scrollY;
@@ -25,7 +25,7 @@ window.onscroll = function(e) {
         navbar.style.backgroundColor = "rgba(20, 22, 28, 1)";
     }
     // console.log('opac: ', opac);
-}
+} */
 
 function showMoreInfo(id) {
     document.getElementById(id).style.display = "block";
