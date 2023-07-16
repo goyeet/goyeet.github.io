@@ -1,6 +1,6 @@
 :root {
   --content-width: 750px;
-  --highlight-color: #61e488;
+  --highlight-color: #b6e79f;
 }
 
 html {
@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #131d15;
+  background: linear-gradient(225deg, #011f03 50%, #73a56e);
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
@@ -95,7 +95,7 @@ header #navbar-container #navbar {
   z-index: 1;
   padding: 15px !important;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   overflow: hidden;
   background-color: #223325;
   border-radius: 0px 0px 16px 16px;
@@ -103,6 +103,7 @@ header #navbar-container #navbar {
   width: 100%;
   position: fixed;
   top: 0;
+  filter: drop-shadow(0px 2px 3px #000000);
 }
 header #navbar-container #navbar a {
   text-decoration: none;
@@ -321,7 +322,7 @@ header #down-arrow svg {
 }
 #content #projects .learn-more {
   border-color: white;
-  background-color: #131d15;
+  background-color: transparent;
   color: white;
   border-style: solid;
   padding: 10px;
@@ -343,7 +344,7 @@ header #down-arrow svg {
 #content #projects .close-container .close {
   border-radius: 100px;
   border: none;
-  background-color: #131d15;
+  background-color: transparent;
   cursor: pointer;
 }
 #content #projects .close-container .close div svg {
@@ -454,9 +455,7 @@ header #down-arrow svg {
   fill: white;
 }
 #content #projects figure {
-  background-color: #424449;
   border-radius: 10px;
-  padding: 0.5em 1em 0.5em 1em;
   margin-left: 0;
   margin-right: 0;
 }
@@ -464,7 +463,6 @@ header #down-arrow svg {
   margin-top: 1em;
 }
 #content #projects figure figcaption {
-  background-color: #202228;
   border-radius: 10px;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -516,16 +514,16 @@ footer {
   text-align: center;
   margin-bottom: 1em;
 }
-footer .footer-button {
+footer .resume-button {
   text-decoration: none;
-  color: #131d15;
-  background-color: white;
+  color: whitesmoke;
+  background-color: transparent;
   padding: 10px;
-  border-radius: 8px;
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
   font-weight: 700;
 }
-footer .footer-button:hover {
-  color: white;
+footer .resume-button:hover {
   background-color: var(--highlight-color);
   transition: 300ms ease-in-out;
 }

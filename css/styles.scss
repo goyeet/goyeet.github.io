@@ -1,6 +1,6 @@
 :root {
     --content-width: 750px;
-    --highlight-color: #61e488;
+    --highlight-color: #b6e79f;
 }
 
 @mixin content {
@@ -18,8 +18,8 @@ html {
 }
 
 body {
-    // background: linear-gradient(180deg, #000000 30%, #4F884A);
-    background-color: #131d15;
+    background: linear-gradient(225deg, #011f03 50%, #73a56e);
+    // background-color: #131d15;
     color: white;
     font-family: "Raleway", sans-serif;
     font-size: 1.3rem;
@@ -109,7 +109,7 @@ header {
             z-index: 1;
             padding: 15px !important;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             overflow: hidden;
             background-color: #223325;
             border-radius: 0px 0px 16px 16px;
@@ -117,6 +117,8 @@ header {
             width: 100%;
             position: fixed;
             top: 0;
+            filter: drop-shadow(0px 2px 3px #000000);
+
 
             a {
                 text-decoration: none;
@@ -358,7 +360,7 @@ header {
 
         .learn-more {
             border-color: white;
-            background-color: #131d15;
+            background-color: transparent;
             color: white;
             border-style: solid;
             padding: 10px;
@@ -379,7 +381,7 @@ header {
             .close {
                 border-radius: 100px;
                 border: none;
-                background-color: #131d15;
+                background-color: transparent;
                 cursor: pointer;
                 div {
                     svg {
@@ -511,16 +513,16 @@ header {
         }
 
         figure {
-            background-color: #424449;
+            // background-color: #424449;
             border-radius: 10px;
-            padding: 0.5em 1em 0.5em 1em;
+            // padding: 0.5em 1em 0.5em 1em;
             margin-left: 0;
             margin-right: 0;
             img {
                 margin-top: 1em;
             }
             figcaption {
-                background-color: #202228;
+                // background-color: #202228;
                 border-radius: 10px;
                 margin-top: 1em;
                 margin-bottom: 1em;
@@ -594,15 +596,15 @@ footer {
     text-align: center;
     margin-bottom: 1em;
 
-    .footer-button {
+    .resume-button {
         text-decoration: none;
-        color: #131d15;
-        background-color: white;
+        color: whitesmoke;
+        background-color: transparent;
         padding: 10px;
-        border-radius: 8px;
+        border: 3px solid whitesmoke;
+        border-radius: 10px;
         font-weight: 700;
         &:hover {
-            color: white;
             background-color: var(--highlight-color);
             transition: 300ms ease-in-out;
         }
