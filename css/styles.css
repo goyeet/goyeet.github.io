@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: linear-gradient(225deg, #011f03 50%, #73a56e);
+  background: linear-gradient(200deg, #000801 50%, #3e663a);
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
@@ -231,6 +231,14 @@ header #down-arrow svg {
   background-image: url("../img/skillsIcons/typescript.svg");
   border-radius: 3px;
 }
+#content #skills li.php:before {
+  background-image: url("../img/skillsIcons/php.svg");
+  border-radius: 3px;
+}
+#content #skills li.wordpress:before {
+  background-image: url("../img/skillsIcons/wordpress.svg");
+  border-radius: 3px;
+}
 #content #skills li.angular:before {
   background-image: url("../img/skillsIcons/angular.svg");
   margin-right: 10px;
@@ -275,8 +283,9 @@ header #down-arrow svg {
   align-items: center;
 }
 #content #experience .tools-list div {
-  background-color: #424449;
-  border-radius: 8px;
+  background-color: transparent;
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
   margin-right: 8px;
   font-size: 18px;
   width: 180px;
@@ -524,7 +533,8 @@ footer .resume-button {
   font-weight: 700;
 }
 footer .resume-button:hover {
-  background-color: var(--highlight-color);
+  color: var(--highlight-color);
+  border-color: var(--highlight-color);
   transition: 300ms ease-in-out;
 }
 footer #icons {
