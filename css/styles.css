@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: linear-gradient(200deg, #000801 50%, #3e663a);
+  background: linear-gradient(180deg, #000801 50%, #264423);
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
@@ -190,20 +190,27 @@ header #down-arrow svg {
 #content #skills .flex-row > div {
   flex: 1 0 50%;
 }
+#content #skills ul {
+  padding-left: 1em;
+}
 #content #skills li {
-  margin: 10px;
+  padding: 10px 10px 10px 50px;
+  position: relative;
 }
 #content #skills li:before {
   content: "";
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
-  position: relative;
-  display: inline-block;
+  top: 2px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-position: center;
   background-size: contain;
-  margin-top: 5px;
-  margin-bottom: -13px;
-  margin-right: 6px;
+  position: absolute;
+  display: inline-block;
+  transform: translateY(2px);
 }
 #content #skills li.python:before {
   background-image: url("../img/skillsIcons/python.svg");
@@ -241,32 +248,22 @@ header #down-arrow svg {
 }
 #content #skills li.angular:before {
   background-image: url("../img/skillsIcons/angular.svg");
-  margin-right: 10px;
 }
 #content #skills li.firebase:before {
   background-image: url("../img/skillsIcons/firebase.svg");
-  margin-left: 4px;
-  margin-right: 7px;
 }
 #content #skills li.git:before {
   background-image: url("../img/skillsIcons/git.svg");
-  margin-right: 11px;
 }
 #content #skills li.vscode:before {
   background-image: url("../img/skillsIcons/vscode.svg");
-  margin-right: 12px;
 }
 #content #skills li.figma:before {
   background-image: url("../img/skillsIcons/figma.svg");
-  margin-left: 6px;
-  margin-right: 6px;
 }
 #content #skills .language-icon {
   width: 50px;
   height: auto;
-}
-#content #skills ul {
-  padding-left: 1em;
 }
 #content #experience h3 {
   font-size: 1.4em;
@@ -285,7 +282,7 @@ header #down-arrow svg {
 #content #experience .tools-list div {
   background-color: transparent;
   border: 3px solid whitesmoke;
-  border-radius: 10px;
+  border-radius: 3px;
   margin-right: 8px;
   font-size: 18px;
   width: 180px;
