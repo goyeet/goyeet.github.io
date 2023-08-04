@@ -297,6 +297,7 @@ header {
     }
 
     #experience {
+        @include content;
         h3 {
             font-size: 1.4em;
             img {

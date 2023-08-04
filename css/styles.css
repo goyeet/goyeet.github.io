@@ -265,6 +265,11 @@ header #down-arrow svg {
   width: 50px;
   height: auto;
 }
+#content #experience {
+  max-width: var(--content-width);
+  margin: auto;
+  padding: 0 5%;
+}
 #content #experience h3 {
   font-size: 1.4em;
 }
