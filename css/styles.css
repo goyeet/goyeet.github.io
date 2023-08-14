@@ -454,7 +454,8 @@ header #down-arrow svg {
 #content #projects figure img {
   margin-top: 1em;
 }
-#content #projects figure figcaption {
+#content #projects figure .caption {
+  background-color: #5e8567;
   border-radius: 10px;
   margin-top: 1em;
   margin-bottom: 1em;

@@ -36,7 +36,6 @@ h2 {
     border-bottom: 3px solid white;
 }
 
-
 h1 {
     font-size: 1.5em;
     line-height: 1.1;
@@ -102,10 +101,10 @@ header {
     #navbar-container {
         display: flex;
         justify-content: center;
-        
+
         #navbar {
             @include content;
-            font-family: 'Raleway', sans-serif;
+            font-family: "Raleway", sans-serif;
             z-index: 1;
             padding: 15px !important;
             display: flex;
@@ -128,7 +127,7 @@ header {
             }
         }
     }
-    
+
     #header-text {
         @include content;
         position: absolute;
@@ -207,7 +206,7 @@ header {
                 border-radius: 40px;
             }
         }
-    }  
+    }
 
     #skills {
         .flex-row > div {
@@ -237,7 +236,7 @@ header {
                 display: inline-block;
                 transform: translateY(2px);
             }
-    
+
             &.python:before {
                 background-image: url("../img/skillsIcons/python.svg");
             }
@@ -293,11 +292,9 @@ header {
             width: 50px;
             height: auto;
         }
-        
     }
 
     #experience {
-
         h3 {
             font-size: 1.4em;
             img {
@@ -345,9 +342,9 @@ header {
             flex-direction: column;
             gap: 2em;
         }
-        
+
         .project-card {
-            font-family: 'Roboto Condensed', sans-serif;
+            font-family: "Roboto Condensed", sans-serif;
             border-radius: 20px;
             padding: 2em;
             border: solid white;
@@ -370,7 +367,7 @@ header {
                 color: var(--highlight-color);
                 border-color: var(--highlight-color);
                 transition: 300ms ease-in-out;
-            }        
+            }
         }
 
         .close-container {
@@ -519,8 +516,8 @@ header {
             img {
                 margin-top: 1em;
             }
-            figcaption {
-                // background-color: #202228;
+            .caption {
+                background-color: #5e8567;
                 border-radius: 10px;
                 margin-top: 1em;
                 margin-bottom: 1em;
@@ -622,7 +619,7 @@ footer {
 
         svg {
             width: 40px;
-        }     
+        }
     }
 
     #cp {
@@ -630,5 +627,4 @@ footer {
         margin: 1em;
         font-size: 16px;
     }
-
 }
