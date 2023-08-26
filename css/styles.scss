@@ -18,12 +18,12 @@ html {
 }
 
 body {
-    background: linear-gradient(180deg, #000801 50%, #264423);
-    // background-color: #131d15;
+    // background: linear-gradient(180deg, #000801 50%, #264423);
+    background-color: #021105;
     color: white;
     font-family: "Raleway", sans-serif;
     font-size: 1.3rem;
-    line-height: 1.4;
+    line-height: 1.5;
     margin: 0;
 
     @media (max-width: 768px) {
@@ -55,6 +55,16 @@ a {
         }
         transition: 300ms ease-in-out;
     }
+}
+
+li {
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.horizontal-line {
+    border-top: 4px solid whitesmoke;
+    margin-right: 120px;
 }
 
 .external-link {
@@ -134,15 +144,15 @@ header {
         top: 32vh;
         left: 0;
         right: 0;
-        text-align: left;
+        text-align: center;
         font-size: 2.5em;
         flex-grow: 1;
 
         h1 {
             margin: 0;
         }
-        p {
-            font-size: 0.5em;
+        span {
+            font-size: 0.75em;
         }
     }
 
@@ -286,6 +296,9 @@ header {
             &.figma:before {
                 background-image: url("../img/skillsIcons/figma.svg");
             }
+            &.mysql:before {
+                background-image: url("../img/skillsIcons/mysql.svg");
+            }
         }
 
         .language-icon {
@@ -302,11 +315,6 @@ header {
                 margin-bottom: 10px;
                 margin-left: 5px;
                 margin-right: 5px;
-            }
-        }
-        .tools-list {
-            li {
-                line-height: 40px;
             }
         }
     }
@@ -345,7 +353,7 @@ header {
 
         .project-card {
             font-family: "Roboto Condensed", sans-serif;
-            border-radius: 20px;
+            border-radius: 16px;
             padding: 2em;
             border: solid white;
             a {
@@ -543,12 +551,6 @@ header {
         }
 
         #amusia {
-            li {
-                margin: 1em;
-                &:before {
-                    display: none;
-                }
-            }
             figure {
                 .screenshot {
                     border-radius: 8px;
@@ -557,12 +559,6 @@ header {
         }
 
         #overcome {
-            li {
-                margin: 1em;
-                &:before {
-                    display: none;
-                }
-            }
             figure {
                 .screenshot {
                     border-radius: 8px;
@@ -571,12 +567,6 @@ header {
         }
 
         #redCliffs {
-            li {
-                margin: 1em;
-                &:before {
-                    display: none;
-                }
-            }
             figure {
                 .screenshot {
                     border-radius: 8px;

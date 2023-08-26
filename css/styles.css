@@ -8,11 +8,11 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg, #000801 50%, #264423);
+  background-color: #021105;
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0;
 }
 @media (max-width: 768px) {
@@ -45,6 +45,16 @@ a:hover {
 }
 a:hover path {
   fill: var(--highlight-color);
+}
+
+li {
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.horizontal-line {
+  border-top: 4px solid whitesmoke;
+  margin-right: 120px;
 }
 
 .external-link svg {
@@ -119,15 +129,15 @@ header #header-text {
   top: 32vh;
   left: 0;
   right: 0;
-  text-align: left;
+  text-align: center;
   font-size: 2.5em;
   flex-grow: 1;
 }
 header #header-text h1 {
   margin: 0;
 }
-header #header-text p {
-  font-size: 0.5em;
+header #header-text span {
+  font-size: 0.75em;
 }
 header #icons {
   max-width: var(--content-width);
@@ -261,6 +271,9 @@ header #down-arrow svg {
 #content #skills li.figma:before {
   background-image: url("../img/skillsIcons/figma.svg");
 }
+#content #skills li.mysql:before {
+  background-image: url("../img/skillsIcons/mysql.svg");
+}
 #content #skills .language-icon {
   width: 50px;
   height: auto;
@@ -273,9 +286,6 @@ header #down-arrow svg {
   margin-bottom: 10px;
   margin-left: 5px;
   margin-right: 5px;
-}
-#content #experience .tools-list li {
-  line-height: 40px;
 }
 #content #education #UCSC {
   display: flex;
@@ -305,7 +315,7 @@ header #down-arrow svg {
 }
 #content #projects .project-card {
   font-family: "Roboto Condensed", sans-serif;
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 2em;
   border: solid white;
 }
@@ -472,29 +482,11 @@ header #down-arrow svg {
 #content #projects #data-compressor .screenshot {
   border-radius: 5px;
 }
-#content #projects #amusia li {
-  margin: 1em;
-}
-#content #projects #amusia li:before {
-  display: none;
-}
 #content #projects #amusia figure .screenshot {
   border-radius: 8px;
 }
-#content #projects #overcome li {
-  margin: 1em;
-}
-#content #projects #overcome li:before {
-  display: none;
-}
 #content #projects #overcome figure .screenshot {
   border-radius: 8px;
-}
-#content #projects #redCliffs li {
-  margin: 1em;
-}
-#content #projects #redCliffs li:before {
-  display: none;
 }
 #content #projects #redCliffs figure .screenshot {
   border-radius: 8px;
