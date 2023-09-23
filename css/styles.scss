@@ -19,7 +19,7 @@ html {
 
 body {
     // background: linear-gradient(180deg, #000801 50%, #264423);
-    background-color: #021105;
+    background-color: #031a08;
     color: white;
     font-family: "Raleway", sans-serif;
     font-size: 1.3rem;
@@ -281,6 +281,9 @@ header {
                 background-image: url("../img/skillsIcons/wordpress.svg");
                 border-radius: 3px;
             }
+            &.react:before {
+                background-image: url("../img/skillsIcons/react.svg");
+            }
             &.angular:before {
                 background-image: url("../img/skillsIcons/angular.svg");
             }
@@ -310,11 +313,24 @@ header {
     #experience {
         h3 {
             font-size: 1.4em;
+            background-color: #223325;
+            border-radius: 16px;
+            padding: 1rem;
+            width: fit-content;
             img {
                 width: 40px;
-                margin-bottom: 10px;
-                margin-left: 5px;
-                margin-right: 5px;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .tools-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            div {
+                border-radius: 10px;
+                background-color: #5e8567;
+                padding: 10px;
             }
         }
     }
@@ -345,6 +361,15 @@ header {
     }
 
     #projects {
+        h3 {
+            margin: 0;
+            font-size: 1.4em;
+            background-color: #223325;
+            border-radius: 16px;
+            padding: 1rem;
+            width: fit-content;
+        }
+
         .proj-container {
             display: flex;
             flex-direction: column;
@@ -428,11 +453,6 @@ header {
             display: none;
         }
 
-        h3 {
-            margin: 0;
-            font-size: 1.4em;
-        }
-
         p {
             margin-top: 1em;
         }
@@ -444,6 +464,8 @@ header {
                 column-gap: 8px;
                 align-items: center;
             }
+            font-size: 1.4em;
+            font-weight: bold;
             margin-top: 1em;
             display: flex;
             justify-content: center;
@@ -482,18 +504,18 @@ header {
                 column-gap: 8px;
                 align-items: center;
             }
-
+            font-size: 1.4em;
+            font-weight: bold;
             margin-top: 1em;
             display: flex;
             justify-content: center;
             text-decoration: none;
             background-color: white;
-            color: #0c3522;
+            color: #5e8567;
             width: 150px;
             height: 35px;
             border-radius: 8px;
             padding: 8px;
-            border: solid white;
 
             svg {
                 width: 30px;
@@ -506,7 +528,7 @@ header {
 
             &:hover {
                 transform: none;
-                background-color: transparent;
+                background-color: #5e8567;
                 color: white;
                 transition: 300ms ease-in-out;
                 path {

@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #021105;
+  background-color: #031a08;
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
@@ -256,6 +256,9 @@ header #down-arrow svg {
   background-image: url("../img/skillsIcons/wordpress.svg");
   border-radius: 3px;
 }
+#content #skills li.react:before {
+  background-image: url("../img/skillsIcons/react.svg");
+}
 #content #skills li.angular:before {
   background-image: url("../img/skillsIcons/angular.svg");
 }
@@ -280,12 +283,25 @@ header #down-arrow svg {
 }
 #content #experience h3 {
   font-size: 1.4em;
+  background-color: #223325;
+  border-radius: 16px;
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 #content #experience h3 img {
   width: 40px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-bottom: 0.5rem;
+}
+#content #experience .tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#content #experience .tools-list div {
+  border-radius: 10px;
+  background-color: #5e8567;
+  padding: 10px;
 }
 #content #education #UCSC {
   display: flex;
@@ -307,6 +323,15 @@ header #down-arrow svg {
   margin-left: 50px;
   width: 170px;
   border-radius: 90px;
+}
+#content #projects h3 {
+  margin: 0;
+  font-size: 1.4em;
+  background-color: #223325;
+  border-radius: 16px;
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 #content #projects .proj-container {
   display: flex;
@@ -378,14 +403,12 @@ header #down-arrow svg {
 #content #projects #redCliffsInfo {
   display: none;
 }
-#content #projects h3 {
-  margin: 0;
-  font-size: 1.4em;
-}
 #content #projects p {
   margin-top: 1em;
 }
 #content #projects .github-button {
+  font-size: 1.4em;
+  font-weight: bold;
   margin-top: 1em;
   display: flex;
   justify-content: center;
@@ -421,17 +444,18 @@ header #down-arrow svg {
   fill: white;
 }
 #content #projects .itch-button {
+  font-size: 1.4em;
+  font-weight: bold;
   margin-top: 1em;
   display: flex;
   justify-content: center;
   text-decoration: none;
   background-color: white;
-  color: #0c3522;
+  color: #5e8567;
   width: 150px;
   height: 35px;
   border-radius: 8px;
   padding: 8px;
-  border: solid white;
 }
 #content #projects .itch-button div {
   display: flex;
@@ -449,7 +473,7 @@ header #down-arrow svg {
 }
 #content #projects .itch-button:hover {
   transform: none;
-  background-color: transparent;
+  background-color: #5e8567;
   color: white;
   transition: 300ms ease-in-out;
 }
