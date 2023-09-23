@@ -180,7 +180,8 @@ header #down-arrow svg {
   display: flex;
 }
 #content #about #about-content {
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 500px) {
   #content #about #about-content {
@@ -283,9 +284,6 @@ header #down-arrow svg {
 }
 #content #experience h3 {
   font-size: 1.4em;
-  background-color: #223325;
-  border-radius: 16px;
-  padding: 1rem;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -301,7 +299,10 @@ header #down-arrow svg {
 #content #experience .tools-list div {
   border-radius: 10px;
   background-color: #5e8567;
-  padding: 10px;
+  padding: 16px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 #content #education #UCSC {
   display: flex;
@@ -451,7 +452,7 @@ header #down-arrow svg {
   justify-content: center;
   text-decoration: none;
   background-color: white;
-  color: #5e8567;
+  color: #223325;
   width: 150px;
   height: 35px;
   border-radius: 8px;
