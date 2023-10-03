@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #031a08;
+  background-color: #0a160c;
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
@@ -284,6 +284,9 @@ header #down-arrow svg {
 }
 #content #experience h3 {
   font-size: 1.4em;
+  background-color: #64836b;
+  border-radius: 16px;
+  padding: 1rem;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -298,7 +301,7 @@ header #down-arrow svg {
 }
 #content #experience .tools-list div {
   border-radius: 10px;
-  background-color: #5e8567;
+  background-color: #64836b;
   padding: 16px;
   text-align: center;
   width: -moz-fit-content;
@@ -328,7 +331,7 @@ header #down-arrow svg {
 #content #projects h3 {
   margin: 0;
   font-size: 1.4em;
-  background-color: #223325;
+  background-color: #64836b;
   border-radius: 16px;
   padding: 1rem;
   width: -moz-fit-content;
