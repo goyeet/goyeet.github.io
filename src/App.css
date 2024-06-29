@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #121212;
+  color: #fafafa;
+  max-width: 750px;
+  margin: auto;
+  padding: 0 5%;
+}
+
+.App {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.section {
+  z-index: 1;
+  padding: 3rem;
+  background-color: #383838;
+  border-radius: 20px;
+  border: solid 2px #4c4c4c;
+
+  p {
+    margin: 0px;
+  }
+}
+
+.section-header {
+  width: max-content;
+  margin-top: 0px;
+  border-bottom: 3px solid #fafafa;
+  border-radius: 3px;
+  padding-bottom: 1rem;
+}
