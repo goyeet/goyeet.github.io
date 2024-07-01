@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/goyeet/portfolio-site/static/css/main.ad134901.css",
+    "main.js": "/goyeet/portfolio-site/static/js/main.fad8b196.js",
+    "static/js/453.534db5b8.chunk.js": "/goyeet/portfolio-site/static/js/453.534db5b8.chunk.js",
+    "static/media/portrait.jpeg": "/goyeet/portfolio-site/static/media/portrait.2ba38346f1c76ea1d7a9.jpeg",
+    "index.html": "/goyeet/portfolio-site/index.html",
+    "main.ad134901.css.map": "/goyeet/portfolio-site/static/css/main.ad134901.css.map",
+    "main.fad8b196.js.map": "/goyeet/portfolio-site/static/js/main.fad8b196.js.map",
+    "453.534db5b8.chunk.js.map": "/goyeet/portfolio-site/static/js/453.534db5b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad134901.css",
+    "static/js/main.fad8b196.js"
+  ]
+}
