@@ -1,47 +1,60 @@
+:root {
+  --black: #121212;
+  --dark-gray: #383838;
+  --light-gray: #6d6d6d;
+  --teal: rgb(94 234 212);
+  --hover-color: #85dcdb;
+  --white: #fafafa;
+  --beige: #f5f5dc;
+  --dark-beige: #e4d5b7;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #121212;
-  color: #fafafa;
-  max-width: 750px;
+  background-color: var(--black);
+  color: var(--white);
+  max-width: 60vw;
   margin: auto;
   padding: 0 5%;
 }
 
 .App {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
   font-size: 4rem;
+  font-family: "Raleway";
 }
 
 h2 {
   font-size: 3rem;
+  font-family: "Raleway";
 }
 
 p {
-  font-size: 1rem;
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  line-height: 1.75rem;
 }
 
 .section {
   z-index: 1;
   padding: 3rem;
-  background-color: #383838;
+  background-color: var(--dark-gray);
   border-radius: 20px;
-  border: solid 2px #4c4c4c;
-
-  p {
-    margin: 0px;
-  }
+  border: solid 2px var(--light-gray);
+  margin-bottom: 10rem;
 }
 
 .section-header {
+  font-family: "Raleway";
   width: max-content;
   margin-top: 0px;
-  border-bottom: 3px solid #fafafa;
+  border-bottom: 3px solid var(--white);
   border-radius: 3px;
   padding-bottom: 1rem;
 }

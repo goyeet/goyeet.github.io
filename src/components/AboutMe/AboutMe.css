@@ -1,22 +1,17 @@
-.about-me {
-  line-height: 1.5rem;
+.about-container {
   display: flex;
-  flex-direction: column;
-}
-
-.container {
   flex-direction: row;
+  gap: 20px;
 }
 
 .portrait {
   width: 250px;
   height: fit-content;
   border-radius: 15px;
-  border: 2px solid #fafafa;
 }
 
-@media (max-width: 500px) {
-  .container {
+@media (max-width: 800px) {
+  .about-container {
     flex-direction: column;
   }
 }

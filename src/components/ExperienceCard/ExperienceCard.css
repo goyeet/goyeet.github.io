@@ -1,0 +1,52 @@
+.experience-card {
+  margin-bottom: 3rem;
+}
+
+.title-date-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .title-date-group {
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+  }
+}
+
+.job-title {
+  font-size: 1.5rem;
+}
+
+.company {
+  margin: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.company:hover {
+  color: var(--hover-color);
+}
+
+.job-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech {
+  border-radius: 50px;
+  padding: 0.5rem 1.25rem;
+  background-color: #1e2b2b;
+  color: var(--teal);
+  font-size: 0.8rem;
+}

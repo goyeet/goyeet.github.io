@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <div className="about-me section" id="about">
       <h2 className="section-header">About Me</h2>
-      <div className="container">
+      <div className="about-container">
         <img className="portrait" src={portrait} />
         <div>
           <p>
