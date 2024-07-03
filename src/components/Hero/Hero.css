@@ -26,6 +26,12 @@
   border-radius: 3px;
 }
 
+@media (max-width: 800px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
 .description {
   font-size: 2rem;
   margin-top: 0;

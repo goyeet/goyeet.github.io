@@ -16,9 +16,9 @@ html {
 body {
   background-color: var(--black);
   color: var(--white);
-  max-width: 60vw;
   margin: auto;
   padding: 0 5%;
+  max-width: 750px;
 }
 
 .App {
