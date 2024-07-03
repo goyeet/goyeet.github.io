@@ -18,7 +18,7 @@ body {
   color: var(--white);
   margin: auto;
   padding: 0 5%;
-  max-width: 750px;
+  max-width: 768px;
 }
 
 .App {
