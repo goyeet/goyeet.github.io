@@ -1,12 +1,11 @@
 :root {
   --black: #121212;
+  --navbar-color: #222222;
   --dark-gray: #383838;
   --light-gray: #6d6d6d;
   --teal: rgb(94 234 212);
   --hover-color: #85dcdb;
   --white: #fafafa;
-  --beige: #f5f5dc;
-  --dark-beige: #e4d5b7;
 }
 
 html {
@@ -17,7 +16,7 @@ body {
   background-color: var(--black);
   color: var(--white);
   margin: auto;
-  padding: 0 5%;
+  /* padding: 0 5%; */
   max-width: 768px;
 }
 

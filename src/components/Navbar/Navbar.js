@@ -23,15 +23,19 @@ function Navbar() {
   };
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("pointerdown", handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("pointerdown", handleClickOutside);
     };
   }, []);
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <>
-      <nav ref={menuRef} className={`navbar ${isMenuOpen ? "open" : ""}`}>
+    <div>
+      <nav className="navbar">
         <a href="#about" className="navLink">
           About
         </a>
@@ -42,10 +46,27 @@ function Navbar() {
           Projects
         </a>
       </nav>
-      <div ref={hamburgerRef} onClick={toggleMenu} className="top-bar">
-        <Hamburger isMenuOpen={isMenuOpen} />
+      <nav
+        ref={menuRef}
+        className={`navbar-mobile ${isMenuOpen ? "open" : ""}`}
+        onPointerDown={(e) => e.stopPropagation()}
+      >
+        <a href="#about" className="navLink" onClick={handleLinkClick}>
+          About
+        </a>
+        <a href="#experience" className="navLink" onClick={handleLinkClick}>
+          Experience
+        </a>
+        <a href="#projects" className="navLink" onClick={handleLinkClick}>
+          Projects
+        </a>
+      </nav>
+      <div className="top-bar">
+        <div ref={hamburgerRef} onClick={toggleMenu}>
+          <Hamburger isMenuOpen={isMenuOpen} />
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 

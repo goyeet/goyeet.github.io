@@ -1,0 +1,11 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 650px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
