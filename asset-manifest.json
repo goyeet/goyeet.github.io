@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.2ed00df7.css",
-    "main.js": "/portfolio-site/static/js/main.e205d096.js",
+    "main.css": "/portfolio-site/static/css/main.0b466983.css",
+    "main.js": "/portfolio-site/static/js/main.56de103e.js",
     "static/js/453.534db5b8.chunk.js": "/portfolio-site/static/js/453.534db5b8.chunk.js",
     "static/media/Portrait.png": "/portfolio-site/static/media/Portrait.4ffeee52ce7dd15f5b75.png",
+    "static/media/amusia_graveyard.png": "/portfolio-site/static/media/amusia_graveyard.a0291907bbdb272dd67d.png",
+    "static/media/BALLISTIC-verticalcapsule.png": "/portfolio-site/static/media/BALLISTIC-verticalcapsule.713a7ef2459c323b528a.png",
     "static/media/portrait.jpeg": "/portfolio-site/static/media/portrait.2ba38346f1c76ea1d7a9.jpeg",
+    "static/media/adventures_of_flippy.png": "/portfolio-site/static/media/adventures_of_flippy.952f3df8dd98e80d9605.png",
     "index.html": "/portfolio-site/index.html",
-    "main.2ed00df7.css.map": "/portfolio-site/static/css/main.2ed00df7.css.map",
-    "main.e205d096.js.map": "/portfolio-site/static/js/main.e205d096.js.map",
+    "main.0b466983.css.map": "/portfolio-site/static/css/main.0b466983.css.map",
+    "main.56de103e.js.map": "/portfolio-site/static/js/main.56de103e.js.map",
     "453.534db5b8.chunk.js.map": "/portfolio-site/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ed00df7.css",
-    "static/js/main.e205d096.js"
+    "static/css/main.0b466983.css",
+    "static/js/main.56de103e.js"
   ]
 }
