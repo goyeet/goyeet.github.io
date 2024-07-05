@@ -13,7 +13,9 @@ html {
 }
 
 body {
-  background-color: var(--black);
+  /* background-color: var(--black); */
+  background: rgb(42, 101, 101);
+  background: radial-gradient(circle, rgba(42, 101, 101, 1) 50%, rgba(18, 18, 18, 1) 100%);
   color: var(--white);
   margin: auto;
   max-width: 768px;
