@@ -16,7 +16,6 @@ body {
   background-color: var(--black);
   color: var(--white);
   margin: auto;
-  /* padding: 0 5%; */
   max-width: 768px;
 }
 

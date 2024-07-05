@@ -10,8 +10,7 @@ const projects = [
     img: BALLISTIC,
     projectTitle: "BALLISTIC",
     blurb: "A chaotic dodgeball party game designed to be played with friends!",
-    description:
-      "Built in Javascript using the Phaser 3 framework. Designed and implemented over the span of 7 weeks with a group of 2 other classmates. Used multiple playtests to balance game values like jump height, movement speed, hitbox sizes, and more. Collaborated with teammates on level design, deciding mechanics, and flow of gameplay. Programmed game using assets created by our team game artist",
+    description: "",
     technologies: ["Unity", "Fusion"],
   },
   {
@@ -29,8 +28,8 @@ const projects = [
     projectTitle: "Adventures of Flippy",
     blurb: "An endless runner inspired by Flappy Bird!",
     description:
-      "Built in Javascript using the Phaser 3 framework. Designed and implemented over the span of 7 weeks with a group of 2 other classmates. Used multiple playtests to balance game values like jump height, movement speed, hitbox sizes, and more. Collaborated with teammates on level design, deciding mechanics, and flow of gameplay. Programmed game using assets created by our team game artist",
-    technologies: ["React", "TypeScript", "TailwindCSS"],
+      "Built in Javascript using the Phaser 3 framework. Designed and implemented over the span of 1 week. All art assets made in Aesprite.",
+    technologies: ["Phaser3", "JavaScript"],
   },
 ];
 

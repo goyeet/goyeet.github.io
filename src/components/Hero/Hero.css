@@ -39,11 +39,3 @@
   padding-top: 1rem;
   text-align: center;
 }
-
-.portrait-png {
-  position: absolute;
-  width: 25%;
-  right: 0;
-  bottom: 0;
-  border: none;
-}

@@ -64,6 +64,18 @@
   }
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.logo {
+  width: min-content;
+  height: 2.5rem;
+}
+
 /* Hamburger menu */
 .top-bar {
   display: none;

@@ -1,14 +1,12 @@
 import "./Hero.css";
-import portrait from "../../assets/Portrait.png";
 
 function Hero() {
   return (
-    <header className="hero">
+    <header className="hero" id="hero">
       <div className="header">
         <h1 className="title">Gordon Yee</h1>
         <p className="description">Software Engineer</p>
       </div>
-      {/* <img className="portrait-png" src={portrait} /> */}
     </header>
   );
 }
