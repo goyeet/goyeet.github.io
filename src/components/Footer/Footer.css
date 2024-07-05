@@ -20,6 +20,11 @@
   gap: 1rem;
 }
 
+.icon {
+  transition: transform 0.25s ease-in-out;
+}
+
 .icon:hover {
   fill: var(--hover-color);
+  transform: scale(1.1);
 }
