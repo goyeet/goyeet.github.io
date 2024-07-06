@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.8abb4b3a.css",
+    "main.css": "/portfolio-site/static/css/main.3171e0e7.css",
     "main.js": "/portfolio-site/static/js/main.cc2b0f28.js",
     "static/js/453.534db5b8.chunk.js": "/portfolio-site/static/js/453.534db5b8.chunk.js",
     "static/media/amusia_graveyard.png": "/portfolio-site/static/media/amusia_graveyard.a0291907bbdb272dd67d.png",
@@ -8,12 +8,12 @@
     "static/media/portrait.jpeg": "/portfolio-site/static/media/portrait.2ba38346f1c76ea1d7a9.jpeg",
     "static/media/adventures_of_flippy.png": "/portfolio-site/static/media/adventures_of_flippy.952f3df8dd98e80d9605.png",
     "index.html": "/portfolio-site/index.html",
-    "main.8abb4b3a.css.map": "/portfolio-site/static/css/main.8abb4b3a.css.map",
+    "main.3171e0e7.css.map": "/portfolio-site/static/css/main.3171e0e7.css.map",
     "main.cc2b0f28.js.map": "/portfolio-site/static/js/main.cc2b0f28.js.map",
     "453.534db5b8.chunk.js.map": "/portfolio-site/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8abb4b3a.css",
+    "static/css/main.3171e0e7.css",
     "static/js/main.cc2b0f28.js"
   ]
 }
