@@ -64,7 +64,7 @@
   }
 }
 
-.logo-container {
+/* .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,8 +73,8 @@
 
 .logo {
   width: min-content;
-  height: 2.5rem;
-}
+  height: 35px;
+} */
 
 /* Hamburger menu */
 .top-bar {
@@ -84,6 +84,8 @@
 @media (max-width: 500px) {
   .top-bar {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 9;

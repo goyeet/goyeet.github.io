@@ -6,7 +6,7 @@ function AboutMe() {
     <div className="about-me section" id="about">
       <h2 className="section-header">About Me</h2>
       <div className="about-container">
-        <img className="portrait" src={portrait} />
+        <img className="portrait" src={portrait} alt="portrait" />
         <div>
           <p>
             Hey there, I'm Gordon! I'm a recent graduate from UC Santa Cruz with a B.S. in Computer

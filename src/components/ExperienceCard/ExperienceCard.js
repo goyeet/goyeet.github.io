@@ -7,7 +7,7 @@ function ExperienceCard({ link, jobTitle, company, date, description, technologi
         <h3 className="job-title">{jobTitle}</h3>
         <span className="date">{date}</span>
       </div>
-      <a href={link} target="_blank" className="company">
+      <a href={link} target="_blank" rel="noreferrer" className="company">
         {company}
       </a>
       <p className="job-description">{description}</p>

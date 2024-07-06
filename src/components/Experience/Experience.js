@@ -21,7 +21,7 @@ const experiences = [
   },
   {
     link: "https://tech4good.soe.ucsc.edu/#/",
-    jobTitle: "Undergraduate Research Assistant: Web Developer",
+    jobTitle: "Undergraduate Web Developer",
     company: "Tech4Good Lab @ UCSC",
     date: "MAR-DEC 2022",
     description:

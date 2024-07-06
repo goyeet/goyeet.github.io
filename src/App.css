@@ -9,20 +9,20 @@
 }
 
 html {
+  background-color: var(--black);
   scroll-behavior: smooth;
 }
 
 body {
-  /* background-color: var(--black); */
   background: rgb(42, 101, 101);
   background: radial-gradient(circle, rgba(42, 101, 101, 1) 50%, rgba(18, 18, 18, 1) 100%);
   color: var(--white);
-  margin: auto;
-  max-width: 768px;
 }
 
 .App {
   font-family: "Poppins", sans-serif;
+  margin: auto;
+  max-width: 768px;
 }
 
 h1 {

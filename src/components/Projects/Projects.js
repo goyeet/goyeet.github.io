@@ -3,6 +3,8 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 import BALLISTIC from "../../assets/BALLISTIC-verticalcapsule.png";
 import AMUSIA from "../../assets/amusia_graveyard.png";
 import FLIPPY from "../../assets/adventures_of_flippy.png";
+import RSA from "../../assets/shutterstock-encryption-logo.webp";
+import MOSAIC from "../../assets/sunset_mosaic.png";
 
 const projects = [
   {
@@ -30,6 +32,22 @@ const projects = [
     description:
       "Built in Javascript using the Phaser 3 framework. Designed and implemented over the span of 1 week. All art assets made in Aesprite.",
     technologies: ["Phaser3", "JavaScript"],
+  },
+  {
+    link: "https://github.com/goyeet/RSA-Cryptosystem",
+    img: RSA,
+    projectTitle: "RSA Cryptosystem",
+    blurb: "A cryptosystem built using the RSA algorithm.",
+    description: "",
+    technologies: ["C", "GMP Library"],
+  },
+  {
+    link: "https://goyeet.github.io/Mosaic-Generator/",
+    img: MOSAIC,
+    projectTitle: "Mosaic Generator",
+    blurb: "A program that turns images into digital mosaic art.",
+    description: "",
+    technologies: ["p5.js"],
   },
 ];
 
