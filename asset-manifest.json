@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.0b1ebe38.css",
+    "main.css": "/portfolio-site/static/css/main.847597ad.css",
     "main.js": "/portfolio-site/static/js/main.945b53a0.js",
     "static/js/453.534db5b8.chunk.js": "/portfolio-site/static/js/453.534db5b8.chunk.js",
     "static/media/amusia_graveyard.png": "/portfolio-site/static/media/amusia_graveyard.a0291907bbdb272dd67d.png",
@@ -10,12 +10,12 @@
     "static/media/shutterstock-encryption-logo.webp": "/portfolio-site/static/media/shutterstock-encryption-logo.bd5a7fe1bb96f4356472.webp",
     "static/media/adventures_of_flippy.png": "/portfolio-site/static/media/adventures_of_flippy.952f3df8dd98e80d9605.png",
     "index.html": "/portfolio-site/index.html",
-    "main.0b1ebe38.css.map": "/portfolio-site/static/css/main.0b1ebe38.css.map",
+    "main.847597ad.css.map": "/portfolio-site/static/css/main.847597ad.css.map",
     "main.945b53a0.js.map": "/portfolio-site/static/js/main.945b53a0.js.map",
     "453.534db5b8.chunk.js.map": "/portfolio-site/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b1ebe38.css",
+    "static/css/main.847597ad.css",
     "static/js/main.945b53a0.js"
   ]
 }
