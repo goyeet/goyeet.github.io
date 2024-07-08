@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.759f161c.css",
-    "main.js": "/static/js/main.d0461537.js",
+    "main.js": "/static/js/main.eed994e8.js",
     "static/js/453.8c3d54bd.chunk.js": "/static/js/453.8c3d54bd.chunk.js",
     "static/media/amusia_graveyard.png": "/static/media/amusia_graveyard.a0291907bbdb272dd67d.png",
     "static/media/sunset_mosaic.png": "/static/media/sunset_mosaic.68f1980da369c5c002f0.png",
@@ -11,11 +11,11 @@
     "static/media/adventures_of_flippy.png": "/static/media/adventures_of_flippy.952f3df8dd98e80d9605.png",
     "index.html": "/index.html",
     "main.759f161c.css.map": "/static/css/main.759f161c.css.map",
-    "main.d0461537.js.map": "/static/js/main.d0461537.js.map",
+    "main.eed994e8.js.map": "/static/js/main.eed994e8.js.map",
     "453.8c3d54bd.chunk.js.map": "/static/js/453.8c3d54bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.759f161c.css",
-    "static/js/main.d0461537.js"
+    "static/js/main.eed994e8.js"
   ]
 }
