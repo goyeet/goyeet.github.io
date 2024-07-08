@@ -1,5 +1,5 @@
 .navbar {
-  width: 500px;
+  width: 750px;
   z-index: 10;
   display: flex;
   justify-content: space-around;
@@ -31,7 +31,6 @@
   display: none;
 }
 
-/* Hide the navbar in mobile view by default */
 @media (max-width: 500px) {
   .navbar {
     display: none;
