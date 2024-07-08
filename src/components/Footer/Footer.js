@@ -38,7 +38,7 @@ function Footer() {
             </svg>
           </a>
           {/* Resume */}
-          <a href="../../assets/Gordon_Yee_Resume_2024.pdf" target="_blank">
+          <a href="https://drive.google.com/file/d/1MmMnXSaB4YEwLba8yJdRphcEwrxvXLLG/view?usp=sharing">
             <svg
               className="icon"
               fill="#fafafa"
