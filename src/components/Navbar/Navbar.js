@@ -45,9 +45,9 @@ function Navbar() {
         <a href="#projects" className="navLink">
           Projects
         </a>
-        <a href="#contact" className="navLink" onClick={handleLinkClick}>
+        {/* <a href="#contact" className="navLink" onClick={handleLinkClick}>
           Contact
-        </a>
+        </a> */}
       </nav>
       <nav
         ref={menuRef}
@@ -63,9 +63,9 @@ function Navbar() {
         <a href="#projects" className="navLink" onClick={handleLinkClick}>
           Projects
         </a>
-        <a href="#contact" className="navLink" onClick={handleLinkClick}>
+        {/* <a href="#contact" className="navLink" onClick={handleLinkClick}>
           Contact
-        </a>
+        </a> */}
       </nav>
       <div className="top-bar">
         <div ref={hamburgerRef} onClick={toggleMenu}>

@@ -10,14 +10,14 @@
 
 .bar {
   width: 25px;
-  height: 3px;
+  height: 2px;
   background-color: var(--white);
-  margin: 4px 0;
+  margin: 3px 0;
   transition: 0.4s;
 }
 
 .bar.top {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(6px, 5px);
 }
 
 .bar.middle {
@@ -25,7 +25,7 @@
 }
 
 .bar.bottom {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(6px, -5px);
 }
 
 @media (max-width: 768px) {

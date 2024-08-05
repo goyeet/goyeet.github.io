@@ -28,8 +28,8 @@
 .navLink:hover {
   color: var(--hover-color);
   transition: 0.5s ease;
-  background-color: var(--light-gray);
-  border-radius: 20px;
+  /* background-color: var(--light-gray);
+  border-radius: 20px; */
 }
 
 .navbar-mobile {
