@@ -1,20 +1,11 @@
 import "./Hamburger.css";
 
-const Hamburger = ({ isMenuOpen }) => {
+const Hamburger = ({ isMenuOpen, toggleMenu }) => {
   return (
-    <div className="hamburger">
-      {isMenuOpen ? (
-        <div className="close">
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-      ) : (
-        <div className="menu">
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-      )}
+    <div className="hamburger" onClick={toggleMenu}>
+      <div className={`bar ${isMenuOpen ? "top" : ""}`}></div>
+      <div className={`bar ${isMenuOpen ? "middle" : ""}`}></div>
+      <div className={`bar ${isMenuOpen ? "bottom" : ""}`}></div>
     </div>
   );
 };

@@ -8,8 +8,7 @@
   z-index: 10;
 }
 
-.menu .bar,
-.close .bar {
+.bar {
   width: 25px;
   height: 3px;
   background-color: var(--white);
@@ -17,11 +16,15 @@
   transition: 0.4s;
 }
 
-.close .bar:first-child {
-  transform: rotate(45deg);
+.bar.top {
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
-.close .bar:last-child {
+.bar.middle {
+  opacity: 0;
+}
+
+.bar.bottom {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 

@@ -2,7 +2,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" id="contact">
       <div className="vertical-container">
         <div className="icon-container">
           {/* GitHub */}

@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import Hamburger from "../Hamburger/Hamburger";
-import Logo from "../../assets/gy-favicon-color.png";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,6 +45,9 @@ function Navbar() {
         <a href="#projects" className="navLink">
           Projects
         </a>
+        <a href="#contact" className="navLink" onClick={handleLinkClick}>
+          Contact
+        </a>
       </nav>
       <nav
         ref={menuRef}
@@ -61,13 +63,11 @@ function Navbar() {
         <a href="#projects" className="navLink" onClick={handleLinkClick}>
           Projects
         </a>
+        <a href="#contact" className="navLink" onClick={handleLinkClick}>
+          Contact
+        </a>
       </nav>
       <div className="top-bar">
-        {/* <div className="logo-container">
-          <a href="#hero">
-            <img src={Logo} className="logo" alt="logo" />
-          </a>
-        </div> */}
         <div ref={hamburgerRef} onClick={toggleMenu}>
           <Hamburger isMenuOpen={isMenuOpen} />
         </div>
