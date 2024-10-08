@@ -16,12 +16,11 @@
   transition: transform 0.3s ease-in-out;
   transform: scale(1);
   height: 16rem;
-  width: 80%;
 }
 
 @media (max-width: 650px) {
   .project-card {
-    width: 80%;
+    width: 90%;
     height: 12rem;
   }
 

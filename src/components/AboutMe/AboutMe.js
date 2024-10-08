@@ -9,8 +9,8 @@ function AboutMe() {
         <img className="portrait" src={portrait} alt="portrait" />
         <div>
           <p>
-            Hey there, I'm Gordon! I'm a recent graduate from UC Santa Cruz with a B.S. in Computer
-            Science: Game Design.
+            Hey there, I'm Gordon! I'm currently working as a software engineer at Dayspring Partners and am based in San Francisco.
+            I'm a graduate from UC Santa Cruz with a B.S. in Computer Science: Game Design and have experience working on web apps, mobile apps, and video games.
           </p>
           <br />
           <p>

@@ -1,5 +1,5 @@
 .navbar {
-  width: 750px;
+  width: 60%;
   z-index: 10;
   display: flex;
   justify-content: space-around;
@@ -28,8 +28,6 @@
 .navLink:hover {
   color: var(--hover-color);
   transition: 0.5s ease;
-  /* background-color: var(--light-gray);
-  border-radius: 20px; */
 }
 
 .navbar-mobile {

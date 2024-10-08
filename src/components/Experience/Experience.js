@@ -2,6 +2,15 @@ import ExperienceCard from "../ExperienceCard/ExperienceCard";
 
 const experiences = [
   {
+    link: "https://www.dayspringpartners.com/",
+    jobTitle: "Associate Software Engineer",
+    company: "Dayspring Partners",
+    date: "SEPT 2024 - PRESENT",
+    description:
+        "Developing custom software solutions for company clients.",
+    technologies: ["PHP", "WordPress", "Symfony", "Angular", "Typescript", "HTML", "CSS"],
+  },
+  {
     link: "https://www.nutripair.co/",
     jobTitle: "Software Development Intern",
     company: "Nutripair",
