@@ -6,6 +6,8 @@
   --teal: rgb(94 234 212);
   --hover-color: #85dcdb;
   --white: #fafafa;
+  --desktop: 768px;
+  --mobile: 500px;
 }
 
 html {
@@ -22,7 +24,7 @@ body {
 .App {
   font-family: "Poppins", sans-serif;
   margin: auto;
-  max-width: 768px;
+  max-width: var(--desktop);
 }
 
 h1 {

@@ -27,7 +27,7 @@
   text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .title {
     font-size: 4rem;
   }

@@ -16,7 +16,7 @@ const experiences = [
     company: "Nutripair",
     date: "SEPT-DEC 2023",
     description:
-      "Collaborated with an Agile team to develop an interactive mobile application to display foods for dietary needs. Coordinated closely with UI/UX team to integrate user-friendly and visually appealing front-end interfaces. Implemented reusable front-end components for iOS and Android using TypeScript in React Native.",
+      "Collaborated with an Agile team to develop an interactive mobile application to display foods for dietary needs.",
     technologies: ["React Native", "Typescript", "CSS", "Expo", "Figma"],
   },
   {
@@ -25,7 +25,7 @@ const experiences = [
     company: "Guardian Insight Group",
     date: "JUNE-SEPT 2023",
     description:
-      "Designed, architected, and implemented a web application to help college applicants write their essays. Presented weekly software development and progress reports directly to CTO and Software Architect. Collaborated with a fellow intern to design and build multiple custom WordPress plugins using PHP. Integrated with Excelify's API to generate essay prompts utilizing user-submitted CV input. Developed and refined data tables in the WordPress MySQL database to enhance overall website functionality.",
+      "Designed, architected, and implemented a web application to help college applicants write their essays.",
     technologies: ["WordPress", "PHP", "JavaScript", "HTML", "CSS", "SQL"],
   },
   {
@@ -34,7 +34,7 @@ const experiences = [
     company: "Tech4Good Lab @ UCSC",
     date: "MAR-DEC 2022",
     description:
-      "Collaborated within teams of 5-8 members to craft web application pages for social computing research. Implemented 10+ front-end components on an Angular-Firebase framework using HTML, Sass, and TypeScript. Actively engaged in team scrum meetings, fostering alignment and progress to collectively achieve our lab's goals. Optimized and refactored legacy code resulting in increased performance and code quality.",
+      "Implemented components of web application pages for social computing research.",
     technologies: ["Angular", "TypeScript", "HTML", "SASS", "Firebase"],
   },
 ];

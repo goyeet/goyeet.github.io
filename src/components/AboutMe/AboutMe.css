@@ -10,7 +10,7 @@
   border-radius: 15px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .about-container {
     flex-direction: column;
   }
