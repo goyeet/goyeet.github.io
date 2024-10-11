@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2fbd30b0.css",
-    "main.js": "/static/js/main.004589e3.js",
+    "main.css": "/static/css/main.fc040f74.css",
+    "main.js": "/static/js/main.b19c8d57.js",
     "static/js/453.8c3d54bd.chunk.js": "/static/js/453.8c3d54bd.chunk.js",
     "static/media/amusia_graveyard.png": "/static/media/amusia_graveyard.a0291907bbdb272dd67d.png",
     "static/media/sunset_mosaic.png": "/static/media/sunset_mosaic.68f1980da369c5c002f0.png",
@@ -10,12 +10,12 @@
     "static/media/shutterstock-encryption-logo.webp": "/static/media/shutterstock-encryption-logo.bd5a7fe1bb96f4356472.webp",
     "static/media/adventures_of_flippy.png": "/static/media/adventures_of_flippy.952f3df8dd98e80d9605.png",
     "index.html": "/index.html",
-    "main.2fbd30b0.css.map": "/static/css/main.2fbd30b0.css.map",
-    "main.004589e3.js.map": "/static/js/main.004589e3.js.map",
+    "main.fc040f74.css.map": "/static/css/main.fc040f74.css.map",
+    "main.b19c8d57.js.map": "/static/js/main.b19c8d57.js.map",
     "453.8c3d54bd.chunk.js.map": "/static/js/453.8c3d54bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fbd30b0.css",
-    "static/js/main.004589e3.js"
+    "static/css/main.fc040f74.css",
+    "static/js/main.b19c8d57.js"
   ]
 }
